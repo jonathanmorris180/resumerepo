@@ -1,0 +1,301 @@
+<apex:page controller="ForteController" showHeader="false" sidebar="false" standardStylesheets="false">
+    <head>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
+        <style>
+            body {
+                background-color: #fff;
+            }
+            #map {
+                width: 500px;
+                height: 500px;
+            }
+            .map {
+                display: flex;
+                justify-content: center;
+                padding: 30px;
+            }
+            .fWrapper {
+                width: 700px;
+                margin: 0 auto;
+            }
+            .headerTitle {
+                font-family: arial, sans-serif;
+                font-size: 16px;
+                font-weight: 600;
+                color: #fff!important;
+                text-align: left;
+                text-transform: uppercase;
+                background: #4e75a3;
+                display: block;
+                padding: 10px;
+                margin: 0;
+            }
+            .dataTable table {
+                width: 100%;
+                font-family: arial, sans-serif;
+                border: solid 1px #E0E3E5;
+                border-collapse: collapse;
+            }
+            .dataTable th {
+                background: #999999;
+                border-top: solid 1px #E0E3E5;
+                border-right: solid 1px #E0E3E5;
+                color: #fff;
+                font-size: 0.8em;
+                font-weight: normal;
+                padding: 11px 2px 10px 5px;
+            }
+            .dataTable td {
+                border-top: solid 1px #E0E3E5;
+                border-right: solid 1px #E0E3E5;
+                color: black;
+                font-size: 13px;
+                padding: 5px 2px 5px 5px;
+            }
+            .dataTable tr:hover {
+                border: solid 2px blue;
+            }
+            #siteHeader {
+                font-family: arial, sans-serif;
+                font-size: 25px;
+                background-color: #4e75a3;
+                color: #fff!important;
+                padding: 23px;
+                width: 700px;
+                text-align: center;
+            }
+            .headerContainer {
+                display: flex;
+                justify-content: center;
+            }
+            #noResults {
+                color: red;
+                font-size: 25px;
+                text-align: center;
+            }
+            .txt {
+                text-align: center;
+                font-family: arial, sans-serif;
+                font-size: 18px;
+            }
+        </style>
+        <base target="_parent"/>
+    </head>
+    <body>
+        <div class="headerContainer">
+            <h1 id="siteHeader">Resources Results</h1>
+        </div>
+        <div id="noResultsError">
+        </div>
+        <div class="map">
+            <div id="map"></div>
+        </div>
+        <div class="txt">
+            <p>Click a vendor to center the map</p>
+        </div>
+        <apex:variable value="{!0}" var="index"/>
+        <apex:form styleClass="fWrapper">
+            <apex:outputPanel styleClass="dataTable">
+                <apex:pageBlock>
+                    <h2 class="headerTitle">Vendors</h2>
+                    <apex:pageBlockTable value="{!vendorlistbycityandstate}" var="vl">
+                        <apex:column headerValue="#">
+                            <apex:outputText>
+                            <apex:variable value="{!index + 1}" var="index"/>
+                            {!index}
+                            </apex:outputText>
+                        </apex:column>
+                        <apex:column headerValue="Company" value="{!vl.Company__c}"/>
+                        <apex:column headerValue="Address" value="{!vl.Address__c}"/>
+                        <apex:column headerValue="Program Availability" value="{!vl.Program_Availability__c}"/>
+                    </apex:pageBlockTable>
+                </apex:pageBlock>
+            </apex:outputPanel>
+        </apex:form>
+        <script>
+            // Array of addresses and companies
+            var addresses = [];
+            var companies = [];
+            var websites = [];
+
+            // Formatted addresses
+            var formattedAddresses = [];
+
+            // Get parks param
+            var urlParams = new URLSearchParams(window.location.search.substring(1));
+            let a = urlParams.get("parks");
+            console.log(a);
+
+            <apex:repeat value="{!vendoraddressesbycityandstate}" var="address">
+                addresses.push("{!address}");
+            </apex:repeat>
+            <apex:repeat value="{!vendorcompanybycityandstate}" var="company">
+                companies.push("{!company}");
+            </apex:repeat>
+            <apex:repeat value="{!vendorwebsitebycityandstate}" var="website">
+                websites.push("{!website}");
+            </apex:repeat>
+
+            console.log(addresses);
+            console.log(companies);
+            console.log(websites);
+
+            // Arrays of vendor coordinates
+            var lats = [];
+            var longs = [];
+
+            // Park arrays
+            var parkLats = [];
+            var parkLongs = [];
+            var parkNames = [];
+            var parkRatings = [];
+
+            // Geocode function
+            async function geocode(add) {
+                await axios.get('https://maps.googleapis.com/maps/api/geocode/json', {
+                    params: {
+                        address: add.val,
+                        key: 'fakekey'
+                    }
+                })
+                .then(function(value) {
+                    lats.push(value.data.results[0].geometry.location.lat);
+                    longs.push(value.data.results[0].geometry.location.lng);
+                    formattedAddresses.push(value.data.results[0].formatted_address);
+                })
+                .catch(function(error) {
+                    console.log(error);
+                });
+            }
+
+            // Places search
+            async function getParks(latlng) {
+                await axios.get('https://cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api/place/nearbysearch/json', {
+                    params: {
+                        location: latlng.val,
+                        radius: '8047',
+                        key: 'fakekey',
+                        keyword: 'park'
+                    }
+                })
+                .then(function(value) {
+                    console.log(value);
+                    console.log(value.data.results.length);
+                    for(i=0; i < value.data.results.length;i++) {
+                        parkLats.push(value.data.results[i].geometry.location.lat);
+                        parkLongs.push(value.data.results[i].geometry.location.lng);
+                        parkNames.push(value.data.results[i].name);
+                        parkRatings.push(value.data.results[i].rating);
+                    }
+                })
+                .catch(function(error) {
+                    console.log(error);
+                });
+                console.log(parkRatings);
+            }
+
+            // Initialize the map
+            async function initMap() {
+
+                // Loop through addresses to get vendor coordinates
+                for(var i=0; i < addresses.length;i++) {
+                    await geocode({val: addresses[i]})
+                        .catch(error => {
+                            console.log(error)
+                        });
+                }
+
+                // Get park coordinates
+                await getParks({val: lats[0] + ',' + longs[0]})
+                    .catch(error => {
+                        console.log(error)
+                });
+
+                // Map options
+                var pos = new google.maps.LatLng(lats[0], longs[0]);
+                var options = {
+                    zoom: 12,
+                    center: pos
+                }
+                if(addresses.length > 0) {
+                    var map = new google.maps.Map(document.getElementById('map'), options);
+                } else {
+                    document.getElementById('noResultsError').innerHTML = '<p id="noResults">No resources found in this area</p>';
+                }
+
+                // Loop through coordinates to display markers for vendors on map
+                var vendorMarkers = [];
+                for(i=0; i < lats.length;i++) {
+                    createVendorMarker(i);
+                }
+
+                function createVendorMarker(i) {
+                    var mkr = new google.maps.Marker({
+                    position: {lat: lats[i], lng: longs[i]},
+                    map: map,
+                    animation: google.maps.Animation.DROP,
+                    content: '<strong><h1>' + companies[i] + '</h1></strong><br>' + formattedAddresses[i] + '<br><a href="https://' + websites[i] + '" target="_blank" id="websites">' + websites[i] + '</a>',
+                    label: (i+1).toString(),
+                    });
+                    vendorMarkers.push(mkr);
+
+                    var infoWindow = new google.maps.InfoWindow({
+                        content: '<strong><h1>' + companies[i] + '</h1></strong><br>' + formattedAddresses[i] + '<br><a href="https://' + websites[i] + '" target="_blank" id="websites">' + websites[i] + '</a>'
+                    });
+
+                    // Listen for the info window
+                    mkr.addListener('click', function() {
+                        infoWindow.open(map, mkr);
+                    });
+                }
+                console.log(vendorMarkers);
+
+                // Loop through coordinates to display parks on map
+                if(a === "on") {
+                    for(i=0; i < parkLats.length;i++) {
+                        addMarker({
+                            coords: {lat: parkLats[i], lng: parkLongs[i]},
+                            content: '<h1>' + parkNames[i] + '</h1><br><p>Rating out of 5: ' + parkRatings[i] + '</p>',
+                            icon: 'http://maps.google.com/mapfiles/ms/icons/blue.png',
+                        });
+                    }
+                }
+
+                // Make table elements clickable
+                $("table").find('tr').each(function(element) {
+                    var id = element;
+                    $(this).on('click', function() {  
+                            map.setCenter(vendorMarkers[id-1].getPosition());
+                    });
+                });
+
+                // Function to add markers
+                function addMarker(props) {
+                    var marker = new google.maps.Marker({
+                    position: props.coords,
+                    map: map,
+                    animation: google.maps.Animation.DROP,
+                    content: props.content,
+                    label: props.label,
+                    icon: props.icon,
+                    });
+
+                    if(props.content) {
+                        // Map info window
+                        var infoWindow = new google.maps.InfoWindow({
+                            content: props.content
+                        });
+
+                        // Listen for the info window
+                        marker.addListener('click', function() {
+                            infoWindow.open(map, marker);
+                        });
+                    }
+                }
+            }
+        </script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=fakekey&callback=initMap"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" 
+        crossorigin="anonymous"></script>
+    </body>
+</apex:page>

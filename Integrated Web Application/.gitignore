@@ -1,0 +1,5 @@
+test.html
+.vscode
+
+# MacOS system files
+.DS_Store

@@ -1,0 +1,35 @@
+body {
+    background: url(bg.jfif);
+    background-size: cover;
+}
+#header-image {
+    max-width: 200px;
+    vertical-align: bottom;
+}
+header {
+    display: flex;
+    justify-content: center;
+    background-color: aqua;
+    padding: 20px;
+    opacity: 80%;
+}
+h1 {
+    font-family: "Montserrat",sans-serif;
+    font-size: 30px;
+    font-weight: 200;
+    margin-top: 40px;
+    margin-left: 20px;
+}
+#visualforce-frame {
+    width: 800px;
+    height: 1000px;
+    border: none;
+    display: block;
+    margin: auto;
+    box-shadow: 0 0 20px #000000b3;
+    border-radius: 8px;
+}
+.vfFrame {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}

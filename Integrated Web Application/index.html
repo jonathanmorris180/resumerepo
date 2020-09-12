@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Forté COVID App</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <form action="results.html" method="GET" class="user-form" id="userForm">
+      <h1>Find Resources</h1>
+<!--       <div class="txtb">
+        <label for="street1">Street</label><input id="street1" type="text" name="street1" />
+      </div> -->
+
+      <div class="txtb">
+        <label for="city1">City</label><input id="city1" type="text" name="city1" pattern="[\w\s\.]+" data-toggle="tooltip" title="Enter a city" required/>
+      </div>
+
+      <div class="txtb">
+        <label for="state1">State/Province</label><input id="state1" type="text" name="state1" pattern="[a-zA-Z\s]+" data-toggle="tooltip" title="If searching within the USA, please enter a valid two-letter code" required/>
+      </div>
+
+      <div class="errorMsg">
+        <p id="resourceErrorMsg"></p>
+      </div>
+
+      <div class="spacing">
+        <p></p>
+      </div>
+
+      <div class="chckbx">
+        <p>Include (optional):</p>
+        <div class="form-check">
+          <input class="form-check-input" id="parks" name="parks" type="checkbox">
+          <label class="form-check-label" for="parks">Nearby parks</label>
+        </div>
+      </div>
+
+<!--       <div class="txtb">
+        <label for="zip1">Zip</label><input id="zip1" type="text" name="zip1" />
+      </div> -->
+
+<!--       <div class="txtb">
+        <label for="country1">Country</label><input id="country1" type="text" name="country1" />
+      </div> -->
+
+      <input value="submit" class="btn" id="resourceSubmit"></input>
+
+      <p id="form-switch">Are you a vendor? Click here to enter your information to the database.</p>
+    </form> 
+
+
+
+
+
+    <!--Vendor Form-->
+    <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" class="vendor-form" id="vendorForm">
+      <input type=hidden name="oid" value="00D4S000000ojxR">
+      <input type=hidden name="retURL" value="http://yldp.org/">
+      <input type=hidden name="recordType" id="recordType" value="0124S0000000Jh7">
+      <!--Geocoded address input-->
+      <input id="00N4S000000HUi1" name="00N4S000000HUi1" type="hidden">
+
+      <h1>Vendor Information</h1>
+      <div class="txtb">
+        <label for="first_name">First Name</label><input id="first_name" maxlength="40" name="first_name" size="20" type="text" pattern="^[a-zA-Z]+$" data-toggle="tooltip" title="Enter your first name" required/>
+      </div>
+
+      <div class="txtb">
+        <label for="last_name">Last Name</label><input id="last_name" maxlength="80" name="last_name" size="20" type="text" pattern="^[a-zA-Z]+$" data-toggle="tooltip" title="Enter your last name" required/>
+      </div>
+
+      <div class="txtb">
+        <label for="company">Company</label><input id="company" maxlength="40" name="company" size="20" type="text" data-toggle="tooltip" title="Enter your company name" required/>
+      </div>
+
+      <div class="txtb">
+        <label for="email">Email</label><input id="email" maxlength="80" name="email" size="20" type="text" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" data-toggle="tooltip" title="Enter your email address" required/>
+      </div>
+
+      <div class="txtb">
+        <label for="phone">Phone</label><input id="phone" maxlength="10" name="phone" size="20" type="text" pattern="\d{10}" data-toggle="tooltip" title="Enter a ten-digit number (omit hyphens)" required/>
+      </div>
+
+      <div class="txtb">
+        <label for="url">Website</label><input id="url" maxlength="80" name="url" size="20" type="text" pattern="(www\.)[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,4}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)|(www\.)?(?!ww)[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,4}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)" data-toggle="tooltip" title="Please omit http:// and https://" required/>
+      </div>
+
+      <div class="txtb" id="radiobtns">
+        <label for="program_options">Program Options:</label>
+          <div class="radiobtns">
+            <label class="radio-inline">
+              <input id="00N4S000000HSrG" name="00N4S000000HSrG" title="Program Availability" type="radio" value="In Person" checked>In Person
+            </label>
+            <label class="radio-inline">
+              <input id="00N4S000000HSrG" name="00N4S000000HSrG" title="Program Availability" type="radio" value="Virtual">Virtual
+            </label>
+            <label class="radio-inline">
+              <input id="00N4S000000HSrG" name="00N4S000000HSrG" title="Program Availability" type="radio" value="In Person &amp; Virtual">Both
+            </label>
+          </div>
+      </div>
+
+      <h1>Address</h1>
+      <div class="txtb">
+        <label for="street">Street</label><input name="street" pattern="[\w\s\.]+" id="street" data-toggle="tooltip" title="Enter your street address" required/>
+      </div>
+
+      <div class="txtb">
+        <label for="city">City</label><input id="city" maxlength="40" name="city" size="20" type="text" pattern="[a-zA-Z\s]+" data-toggle="tooltip" title="Enter your city" required/>
+      </div>
+
+      <div class="txtb">
+        <label for="state">State/Province</label><input id="state" maxlength="20" name="state" size="20" type="text" pattern="[a-zA-Z\s]+" data-toggle="tooltip" title="Enter your state/province" required/>
+      </div>
+
+      <div class="txtb">
+        <label for="zip">Zip/Postal Code</label><input id="zip" maxlength="10" name="zip" size="20" type="text" pattern="[A-Z0-9]+" data-toggle="tooltip" title="Uppercase letters and numbers only" required/>
+      </div>
+
+      <div class="txtb">
+        <label for="country">Country</label><input  id="country" maxlength="40" name="country" size="20" type="text" pattern="[\w\s]+" data-toggle="tooltip" title="Enter your country" required/>
+      </div>
+
+      <input class="btn" id="vendorSubmit" value="Submit"></input>
+
+      <p id="form-switch-back">Click to return to the previous form.</p>
+    </form>
+    <!--jQuery first, then Popper.js, then Bootstrap JS-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+    <!--Axios and Google scripts-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=fakekey"></script>
+
+    <!--Own script-->
+    <script src="scripts.js"></script>
+  </body>
+</html>
