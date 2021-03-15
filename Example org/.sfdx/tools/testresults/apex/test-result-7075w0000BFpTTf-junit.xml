@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+    <testsuite name="force.apex" timestamp="2020-08-12T22:10:42-06:00" hostname="https://playful-shark-cj0qnn-dev-ed.my.salesforce.com" tests="1" failures="0"  errors="0"  time="0.03">
+        <properties>
+            <property name="outcome" value="Passed"/>
+            <property name="testsRan" value="1"/>
+            <property name="passing" value="1"/>
+            <property name="failing" value="0"/>
+            <property name="skipped" value="0"/>
+            <property name="passRate" value="100%"/>
+            <property name="failRate" value="0%"/>
+            <property name="testStartTime" value="Aug 12, 2020 10:10 PM"/>
+            <property name="testExecutionTime" value="0.03 s"/>
+            <property name="testTotalTime" value="0.03 s"/>
+            <property name="commandTime" value="3.32 s"/>
+            <property name="hostname" value="https://playful-shark-cj0qnn-dev-ed.my.salesforce.com"/>
+            <property name="orgId" value="00D5w0000050VTsEAM"/>
+            <property name="username" value="musicmanmorris@playful-shark-cj0qnn.com"/>
+            <property name="testRunId" value="7075w0000BFpTTf"/>
+            <property name="userId" value="0055w00000C3LSYAA3"/>
+            <property name="testRunCoverage" value="100%"/>
+            <property name="orgWideCoverage" value="2%"/>
+        </properties>
+        <testcase name="testCallout" classname="ParkLocatorTest" time="0.03">
+        </testcase>
+    </testsuite>
+</testsuites>

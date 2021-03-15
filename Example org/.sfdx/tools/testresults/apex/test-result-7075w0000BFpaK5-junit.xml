@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+    <testsuite name="force.apex" timestamp="2020-08-12T23:01:24-06:00" hostname="https://playful-shark-cj0qnn-dev-ed.my.salesforce.com" tests="5" failures="0"  errors="0"  time="1.26">
+        <properties>
+            <property name="outcome" value="Passed"/>
+            <property name="testsRan" value="5"/>
+            <property name="passing" value="5"/>
+            <property name="failing" value="0"/>
+            <property name="skipped" value="0"/>
+            <property name="passRate" value="100%"/>
+            <property name="failRate" value="0%"/>
+            <property name="testStartTime" value="Aug 12, 2020 11:01 PM"/>
+            <property name="testExecutionTime" value="1.26 s"/>
+            <property name="testTotalTime" value="1.26 s"/>
+            <property name="commandTime" value="5.74 s"/>
+            <property name="hostname" value="https://playful-shark-cj0qnn-dev-ed.my.salesforce.com"/>
+            <property name="orgId" value="00D5w0000050VTsEAM"/>
+            <property name="username" value="musicmanmorris@playful-shark-cj0qnn.com"/>
+            <property name="testRunId" value="7075w0000BFpaK5"/>
+            <property name="userId" value="0055w00000C3LSYAA3"/>
+            <property name="testRunCoverage" value="100%"/>
+            <property name="orgWideCoverage" value="3%"/>
+        </properties>
+        <testcase name="testCreateCase" classname="CaseManagerTest" time="0.14">
+        </testcase>
+        <testcase name="testDeleteCase" classname="CaseManagerTest" time="0.95">
+        </testcase>
+        <testcase name="testGetCaseById" classname="CaseManagerTest" time="0.04">
+        </testcase>
+        <testcase name="testUpdateCaseFields" classname="CaseManagerTest" time="0.06">
+        </testcase>
+        <testcase name="testUpsertCase" classname="CaseManagerTest" time="0.06">
+        </testcase>
+    </testsuite>
+</testsuites>

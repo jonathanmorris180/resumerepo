@@ -1,0 +1,34 @@
+<template>
+    <lightning-card title="Navigation Service in Lightning Web Components">
+        <lightning-card title="Navigate to record pages">
+            <lightning-button-group>
+                <lightning-button label="New record page" onclick={navigateToNewRecordPage}></lightning-button>
+                <lightning-button label="Edit record page" onclick={navigateToEditRecordPage}></lightning-button>
+                <lightning-button label="View record page" onclick={navigateToViewRecordPage}></lightning-button>
+            </lightning-button-group><br/>
+        </lightning-card>
+        <lightning-card title="Navigate to list views">
+            <lightning-button-group>
+                <lightning-button label="Account recent view" onclick={navigateAccRecentView}></lightning-button>
+                <lightning-button label="Related list view" onclick={navigateRelatedListView}></lightning-button>
+            </lightning-button-group>
+        </lightning-card>
+        <lightning-card title="Navigate to object page">
+            <lightning-button-group>
+                <lightning-button label="Account page" onclick={navigateAccObject}></lightning-button>
+                <lightning-button label="Contact page" onclick={navigateConObject}></lightning-button>
+            </lightning-button-group>
+        </lightning-card><br/>
+        <lightning-card title="Navigate to web page">
+            <lightning-button-group>
+                <lightning-button label="Web page" onclick={navigateToWebPage}></lightning-button>
+            </lightning-button-group>
+        </lightning-card>
+        <lightning-card title="Navigate to standard home tabs">
+            <lightning-button-group>
+                <lightning-button label="Home page" onclick={navigateToHomePage}></lightning-button>
+                <lightning-button label="Chatter page" onclick={navigateToChatterHome}></lightning-button>
+            </lightning-button-group>
+        </lightning-card>
+    </lightning-card>
+</template>

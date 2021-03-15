@@ -1,0 +1,3 @@
+<aura:event type="APPLICATION" description="Event fired when a BoatTile is selected to update the details section">
+    <aura:attribute name="boat" type="Boat__c"/>
+</aura:event>

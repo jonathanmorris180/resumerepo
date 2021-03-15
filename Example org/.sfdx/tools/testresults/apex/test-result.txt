@@ -1,0 +1,44 @@
+=== Test Reports
+FORMAT  FILE
+──────  ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+txt     /Users/jonathanmorris/Google Drive/Salesforce/VS Code SF Projects/Trailhead Playground 1/.sfdx/tools/testresults/apex/test-result.txt
+txt     /Users/jonathanmorris/Google Drive/Salesforce/VS Code SF Projects/Trailhead Playground 1/.sfdx/tools/testresults/apex/test-run-id.txt
+junit   /Users/jonathanmorris/Google Drive/Salesforce/VS Code SF Projects/Trailhead Playground 1/.sfdx/tools/testresults/apex/test-result-7075w0000BFpoYD-junit.xml
+json    /Users/jonathanmorris/Google Drive/Salesforce/VS Code SF Projects/Trailhead Playground 1/.sfdx/tools/testresults/apex/test-result-7075w0000BFpoYD.json
+json    /Users/jonathanmorris/Google Drive/Salesforce/VS Code SF Projects/Trailhead Playground 1/.sfdx/tools/testresults/apex/test-result-codecoverage.json
+
+=== Apex Code Coverage
+ID                  NAME               % COVERED  UNCOVERED LINES
+──────────────────  ─────────────────  ─────────  ───────────────
+01p5w00000Ka64kAAB  AnimalLocator      100%
+01q5w000000Ocr2AAC  AddRelatedRecord   100%
+01q5w000000OcqJAAS  HelloWorldTrigger  NaN%
+01p5w00000Ka6fmAAB  AccountManager     100%
+
+=== Test Results
+TEST NAME                           OUTCOME  MESSAGE  RUNTIME (MS)
+──────────────────────────────────  ───────  ───────  ────────────
+AccountManagerTest.testGetAccounts  Pass              260
+
+=== Test Summary
+NAME                 VALUE
+───────────────────  ──────────────────────────────────────────────────────
+Outcome              Passed
+Tests Ran            1
+Passing              1
+Failing              0
+Skipped              0
+Pass Rate            100%
+Fail Rate            0%
+Test Start Time      Aug 13, 2020 12:42 AM
+Test Execution Time  260 ms
+Test Total Time      260 ms
+Command Time         3183 ms
+Hostname             https://playful-shark-cj0qnn-dev-ed.my.salesforce.com
+Org Id               00D5w0000050VTsEAM
+Username             musicmanmorris@playful-shark-cj0qnn.com
+Test Run Id          7075w0000BFpoYD
+User Id              0055w00000C3LSYAA3
+Test Run Coverage    100%
+Org Wide Coverage    1%
+

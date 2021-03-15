@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+    <testsuite name="force.apex" timestamp="2020-07-13T22:27:27-06:00" hostname="https://playful-shark-cj0qnn-dev-ed.my.salesforce.com" tests="4" failures="2"  errors="0"  time="6.6">
+        <properties>
+            <property name="outcome" value="Failed"/>
+            <property name="testsRan" value="4"/>
+            <property name="passing" value="2"/>
+            <property name="failing" value="2"/>
+            <property name="skipped" value="0"/>
+            <property name="passRate" value="50%"/>
+            <property name="failRate" value="50%"/>
+            <property name="testStartTime" value="Jul 13, 2020 10:27 PM"/>
+            <property name="testExecutionTime" value="6.6 s"/>
+            <property name="testTotalTime" value="6.6 s"/>
+            <property name="commandTime" value="11.99 s"/>
+            <property name="hostname" value="https://playful-shark-cj0qnn-dev-ed.my.salesforce.com"/>
+            <property name="orgId" value="00D5w0000050VTsEAM"/>
+            <property name="username" value="musicmanmorris@playful-shark-cj0qnn.com"/>
+            <property name="testRunId" value="7075w0000AwkrcX"/>
+            <property name="userId" value="0055w00000C3LSYAA3"/>
+            <property name="testRunCoverage" value="93%"/>
+            <property name="orgWideCoverage" value="19%"/>
+        </properties>
+        <testcase name="TestDeleteAccountWithNoOpportunities" classname="TestAccountDeletion" time="0.87">
+            <failure message="System.AssertException: Assertion Failed"><![CDATA[Class.TestAccountDeletion.TestDeleteAccountWithNoOpportunities: line 30, column 1]]></failure>
+        </testcase>
+        <testcase name="TestDeleteAccountWithOneOpportunity" classname="TestAccountDeletion" time="0.14">
+        </testcase>
+        <testcase name="TestDeleteBulkAccountsWithNoOpportunities" classname="TestAccountDeletion" time="2.2">
+            <failure message="System.AssertException: Assertion Failed"><![CDATA[Class.TestAccountDeletion.TestDeleteBulkAccountsWithNoOpportunities: line 64, column 1]]></failure>
+        </testcase>
+        <testcase name="TestDeleteBulkAccountsWithOneOpportunity" classname="TestAccountDeletion" time="3.39">
+        </testcase>
+    </testsuite>
+</testsuites>

@@ -1,0 +1,3 @@
+<aura:event type="COMPONENT" description="The event that is fired after a review has been added.">
+    <aura:attribute name="reviewSaved" type="Boolean"/>
+</aura:event>

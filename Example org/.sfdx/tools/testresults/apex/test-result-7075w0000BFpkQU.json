@@ -1,0 +1,415 @@
+{
+    "summary": {
+        "outcome": "Passed",
+        "testsRan": 1,
+        "passing": 1,
+        "failing": 0,
+        "skipped": 0,
+        "passRate": "100%",
+        "failRate": "0%",
+        "testStartTime": "Aug 13, 2020 12:14 AM",
+        "testExecutionTime": "827 ms",
+        "testTotalTime": "827 ms",
+        "commandTime": "4442 ms",
+        "hostname": "https://playful-shark-cj0qnn-dev-ed.my.salesforce.com",
+        "orgId": "00D5w0000050VTsEAM",
+        "username": "musicmanmorris@playful-shark-cj0qnn.com",
+        "testRunId": "7075w0000BFpkQU",
+        "userId": "0055w00000C3LSYAA3",
+        "testRunCoverage": "90%",
+        "orgWideCoverage": "2%"
+    },
+    "tests": [
+        {
+            "attributes": {
+                "type": "ApexTestResult",
+                "url": "/services/data/v49.0/tooling/sobjects/ApexTestResult/07M5w000009kSUvEAM"
+            },
+            "Id": "07M5w000009kSUvEAM",
+            "QueueItemId": "7095w000000FMzvAAG",
+            "StackTrace": null,
+            "Message": null,
+            "AsyncApexJobId": "7075w0000BFpkQUAQZ",
+            "MethodName": "testGetAccounts",
+            "Outcome": "Pass",
+            "ApexClass": {
+                "attributes": {
+                    "type": "ApexClass",
+                    "url": "/services/data/v49.0/tooling/sobjects/ApexClass/01p5w00000Ka6frAAB"
+                },
+                "Id": "01p5w00000Ka6frAAB",
+                "Name": "AccountManagerTest",
+                "NamespacePrefix": null
+            },
+            "RunTime": 827,
+            "FullName": "AccountManagerTest.testGetAccounts"
+        }
+    ],
+    "coverage": {
+        "coverage": [
+            {
+                "id": "01q5w000000OcqOAAS",
+                "name": "ExampleTrigger",
+                "totalLines": 5,
+                "lines": {
+                    "2": 1,
+                    "3": 1,
+                    "5": 1,
+                    "6": 1,
+                    "8": 0
+                },
+                "totalCovered": 4,
+                "coveredPercent": 80
+            },
+            {
+                "id": "01p5w00000KZhjzAAD",
+                "name": "EmailManager",
+                "totalLines": 15,
+                "lines": {
+                    "3": 1,
+                    "5": 1,
+                    "6": 1,
+                    "7": 1,
+                    "8": 1,
+                    "9": 1,
+                    "12": 1,
+                    "13": 1,
+                    "16": 1,
+                    "20": 1,
+                    "21": 1,
+                    "27": 1,
+                    "28": 1,
+                    "32": 0,
+                    "37": 1
+                },
+                "totalCovered": 14,
+                "coveredPercent": 93.33333333333333
+            },
+            {
+                "id": "01q5w000000Ocr2AAC",
+                "name": "AddRelatedRecord",
+                "totalLines": 9,
+                "lines": {
+                    "2": 1,
+                    "6": 1,
+                    "8": 1,
+                    "10": 1,
+                    "11": 1,
+                    "12": 1,
+                    "13": 1,
+                    "16": 1,
+                    "17": 1
+                },
+                "totalCovered": 9,
+                "coveredPercent": 100
+            },
+            {
+                "id": "01q5w000000OcrgAAC",
+                "name": "AccountAddressTrigger",
+                "totalLines": 3,
+                "lines": {
+                    "2": 1,
+                    "3": 1,
+                    "4": 0
+                },
+                "totalCovered": 2,
+                "coveredPercent": 66.66666666666666
+            },
+            {
+                "id": "01q5w000000Ocu6AAC",
+                "name": "RestrictContactByName",
+                "totalLines": 3,
+                "lines": {
+                    "4": 1,
+                    "5": 1,
+                    "6": 0
+                },
+                "totalCovered": 2,
+                "coveredPercent": 66.66666666666666
+            },
+            {
+                "id": "01q5w000000OcqJAAS",
+                "name": "HelloWorldTrigger",
+                "totalLines": 0,
+                "lines": {},
+                "totalCovered": 0,
+                "coveredPercent": null
+            },
+            {
+                "id": "01p5w00000Ka6fmAAB",
+                "name": "AccountManager",
+                "totalLines": 5,
+                "lines": {
+                    "4": 1,
+                    "5": 1,
+                    "7": 1,
+                    "8": 1,
+                    "9": 1
+                },
+                "totalCovered": 5,
+                "coveredPercent": 100
+            }
+        ],
+        "records": [
+            {
+                "attributes": {
+                    "type": "ApexCodeCoverage",
+                    "url": "/services/data/v49.0/tooling/sobjects/ApexCodeCoverage/7145w00000GLULDAA5"
+                },
+                "ApexTestClass": {
+                    "attributes": {
+                        "type": "ApexClass",
+                        "url": "/services/data/v49.0/tooling/sobjects/ApexClass/01p5w00000Ka6frAAB"
+                    },
+                    "Id": "01p5w00000Ka6frAAB",
+                    "Name": "AccountManagerTest"
+                },
+                "Coverage": {
+                    "coveredLines": [
+                        2,
+                        3,
+                        5,
+                        6
+                    ],
+                    "uncoveredLines": [
+                        8
+                    ]
+                },
+                "TestMethodName": "testGetAccounts",
+                "NumLinesCovered": 4,
+                "ApexClassOrTrigger": {
+                    "attributes": {
+                        "type": "Name",
+                        "url": "/services/data/v49.0/tooling/sobjects/ApexTrigger/01q5w000000OcqOAAS"
+                    },
+                    "Id": "01q5w000000OcqOAAS",
+                    "Name": "ExampleTrigger"
+                },
+                "NumLinesUncovered": 1
+            },
+            {
+                "attributes": {
+                    "type": "ApexCodeCoverage",
+                    "url": "/services/data/v49.0/tooling/sobjects/ApexCodeCoverage/7145w00000GLULEAA5"
+                },
+                "ApexTestClass": {
+                    "attributes": {
+                        "type": "ApexClass",
+                        "url": "/services/data/v49.0/tooling/sobjects/ApexClass/01p5w00000Ka6frAAB"
+                    },
+                    "Id": "01p5w00000Ka6frAAB",
+                    "Name": "AccountManagerTest"
+                },
+                "Coverage": {
+                    "coveredLines": [
+                        3,
+                        5,
+                        6,
+                        7,
+                        8,
+                        9,
+                        12,
+                        13,
+                        16,
+                        20,
+                        21,
+                        27,
+                        28,
+                        37
+                    ],
+                    "uncoveredLines": [
+                        32
+                    ]
+                },
+                "TestMethodName": "testGetAccounts",
+                "NumLinesCovered": 14,
+                "ApexClassOrTrigger": {
+                    "attributes": {
+                        "type": "Name",
+                        "url": "/services/data/v49.0/tooling/sobjects/ApexClass/01p5w00000KZhjzAAD"
+                    },
+                    "Id": "01p5w00000KZhjzAAD",
+                    "Name": "EmailManager"
+                },
+                "NumLinesUncovered": 1
+            },
+            {
+                "attributes": {
+                    "type": "ApexCodeCoverage",
+                    "url": "/services/data/v49.0/tooling/sobjects/ApexCodeCoverage/7145w00000GLULFAA5"
+                },
+                "ApexTestClass": {
+                    "attributes": {
+                        "type": "ApexClass",
+                        "url": "/services/data/v49.0/tooling/sobjects/ApexClass/01p5w00000Ka6frAAB"
+                    },
+                    "Id": "01p5w00000Ka6frAAB",
+                    "Name": "AccountManagerTest"
+                },
+                "Coverage": {
+                    "coveredLines": [
+                        2,
+                        6,
+                        8,
+                        10,
+                        11,
+                        12,
+                        13,
+                        16,
+                        17
+                    ],
+                    "uncoveredLines": []
+                },
+                "TestMethodName": "testGetAccounts",
+                "NumLinesCovered": 9,
+                "ApexClassOrTrigger": {
+                    "attributes": {
+                        "type": "Name",
+                        "url": "/services/data/v49.0/tooling/sobjects/ApexTrigger/01q5w000000Ocr2AAC"
+                    },
+                    "Id": "01q5w000000Ocr2AAC",
+                    "Name": "AddRelatedRecord"
+                },
+                "NumLinesUncovered": 0
+            },
+            {
+                "attributes": {
+                    "type": "ApexCodeCoverage",
+                    "url": "/services/data/v49.0/tooling/sobjects/ApexCodeCoverage/7145w00000GLULGAA5"
+                },
+                "ApexTestClass": {
+                    "attributes": {
+                        "type": "ApexClass",
+                        "url": "/services/data/v49.0/tooling/sobjects/ApexClass/01p5w00000Ka6frAAB"
+                    },
+                    "Id": "01p5w00000Ka6frAAB",
+                    "Name": "AccountManagerTest"
+                },
+                "Coverage": {
+                    "coveredLines": [
+                        2,
+                        3
+                    ],
+                    "uncoveredLines": [
+                        4
+                    ]
+                },
+                "TestMethodName": "testGetAccounts",
+                "NumLinesCovered": 2,
+                "ApexClassOrTrigger": {
+                    "attributes": {
+                        "type": "Name",
+                        "url": "/services/data/v49.0/tooling/sobjects/ApexTrigger/01q5w000000OcrgAAC"
+                    },
+                    "Id": "01q5w000000OcrgAAC",
+                    "Name": "AccountAddressTrigger"
+                },
+                "NumLinesUncovered": 1
+            },
+            {
+                "attributes": {
+                    "type": "ApexCodeCoverage",
+                    "url": "/services/data/v49.0/tooling/sobjects/ApexCodeCoverage/7145w00000GLULHAA5"
+                },
+                "ApexTestClass": {
+                    "attributes": {
+                        "type": "ApexClass",
+                        "url": "/services/data/v49.0/tooling/sobjects/ApexClass/01p5w00000Ka6frAAB"
+                    },
+                    "Id": "01p5w00000Ka6frAAB",
+                    "Name": "AccountManagerTest"
+                },
+                "Coverage": {
+                    "coveredLines": [
+                        4,
+                        5
+                    ],
+                    "uncoveredLines": [
+                        6
+                    ]
+                },
+                "TestMethodName": "testGetAccounts",
+                "NumLinesCovered": 2,
+                "ApexClassOrTrigger": {
+                    "attributes": {
+                        "type": "Name",
+                        "url": "/services/data/v49.0/tooling/sobjects/ApexTrigger/01q5w000000Ocu6AAC"
+                    },
+                    "Id": "01q5w000000Ocu6AAC",
+                    "Name": "RestrictContactByName"
+                },
+                "NumLinesUncovered": 1
+            },
+            {
+                "attributes": {
+                    "type": "ApexCodeCoverage",
+                    "url": "/services/data/v49.0/tooling/sobjects/ApexCodeCoverage/7145w00000GLULIAA5"
+                },
+                "ApexTestClass": {
+                    "attributes": {
+                        "type": "ApexClass",
+                        "url": "/services/data/v49.0/tooling/sobjects/ApexClass/01p5w00000Ka6frAAB"
+                    },
+                    "Id": "01p5w00000Ka6frAAB",
+                    "Name": "AccountManagerTest"
+                },
+                "Coverage": {
+                    "coveredLines": [],
+                    "uncoveredLines": []
+                },
+                "TestMethodName": "testGetAccounts",
+                "NumLinesCovered": 0,
+                "ApexClassOrTrigger": {
+                    "attributes": {
+                        "type": "Name",
+                        "url": "/services/data/v49.0/tooling/sobjects/ApexTrigger/01q5w000000OcqJAAS"
+                    },
+                    "Id": "01q5w000000OcqJAAS",
+                    "Name": "HelloWorldTrigger"
+                },
+                "NumLinesUncovered": 0
+            },
+            {
+                "attributes": {
+                    "type": "ApexCodeCoverage",
+                    "url": "/services/data/v49.0/tooling/sobjects/ApexCodeCoverage/7145w00000GLULJAA5"
+                },
+                "ApexTestClass": {
+                    "attributes": {
+                        "type": "ApexClass",
+                        "url": "/services/data/v49.0/tooling/sobjects/ApexClass/01p5w00000Ka6frAAB"
+                    },
+                    "Id": "01p5w00000Ka6frAAB",
+                    "Name": "AccountManagerTest"
+                },
+                "Coverage": {
+                    "coveredLines": [
+                        4,
+                        5,
+                        7,
+                        8,
+                        9
+                    ],
+                    "uncoveredLines": []
+                },
+                "TestMethodName": "testGetAccounts",
+                "NumLinesCovered": 5,
+                "ApexClassOrTrigger": {
+                    "attributes": {
+                        "type": "Name",
+                        "url": "/services/data/v49.0/tooling/sobjects/ApexClass/01p5w00000Ka6fmAAB"
+                    },
+                    "Id": "01p5w00000Ka6fmAAB",
+                    "Name": "AccountManager"
+                },
+                "NumLinesUncovered": 0
+            }
+        ],
+        "summary": {
+            "totalLines": 40,
+            "coveredLines": 36,
+            "testRunCoverage": "90%",
+            "orgWideCoverage": "2%"
+        }
+    }
+}

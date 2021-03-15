@@ -1,0 +1,34 @@
+<aura:component controller="BoatSearchFormController">
+    <aura:attribute name="errors" type="Object[]"/>
+    <aura:attribute name="boatIsCreatable" type="Boolean"/>
+    <aura:attribute name="selectedValue" type="String" default=""/>
+    <aura:attribute name="boatTypes" type="BoatType__c[]"/>
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <aura:registerEvent name="formsubmit" type="c:FormSubmit"/>
+
+    <lightning:layout horizontalAlign="center" verticalAlign="end">
+        <lightning:layoutItem class="slds-m-horizontal_x-small">
+            <lightning:select name="boat-selector" label="" value="{!v.selectedValue}" aura:id="dropdown">
+                <option text="All Types" value=""/>
+                <aura:iteration items="{!v.boatTypes}" var="boat">
+                    <option text="{!boat.Name}" value="{!boat.Id}"/>
+                </aura:iteration>
+            </lightning:select>
+        </lightning:layoutItem>
+        <lightning:layoutItem class="slds-m-horizontal_x-small">
+            <lightning:button variant="brand" label="Search" title="Search" onclick="{!c.onFormSubmit}"/>
+        </lightning:layoutItem>
+        <aura:if isTrue="{!v.boatIsCreatable}">
+            <lightning:layoutItem class="slds-m-horizontal_x-small">
+                <lightning:button variant="neutral" label="New" title="New" onclick="{!c.handleNew}"/>
+            </lightning:layoutItem>
+        </aura:if>
+    </lightning:layout>
+
+    <aura:if isTrue="{!not(empty(v.errors))}">
+        <aura:iteration items="{!v.errors}" var="error">
+            <lightning:formattedText value="{!error}"/>
+        </aura:iteration>
+    </aura:if>
+
+</aura:component>	

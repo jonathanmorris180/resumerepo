@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+    <testsuite name="force.apex" timestamp="2020-08-07T21:22:48-06:00" hostname="https://playful-shark-cj0qnn-dev-ed.my.salesforce.com" tests="2" failures="0"  errors="0"  time="0.05">
+        <properties>
+            <property name="outcome" value="Passed"/>
+            <property name="testsRan" value="2"/>
+            <property name="passing" value="2"/>
+            <property name="failing" value="0"/>
+            <property name="skipped" value="0"/>
+            <property name="passRate" value="100%"/>
+            <property name="failRate" value="0%"/>
+            <property name="testStartTime" value="Aug 7, 2020 9:22 PM"/>
+            <property name="testExecutionTime" value="0.05 s"/>
+            <property name="testTotalTime" value="0.05 s"/>
+            <property name="commandTime" value="3.17 s"/>
+            <property name="hostname" value="https://playful-shark-cj0qnn-dev-ed.my.salesforce.com"/>
+            <property name="orgId" value="00D5w0000050VTsEAM"/>
+            <property name="username" value="musicmanmorris@playful-shark-cj0qnn.com"/>
+            <property name="testRunId" value="7075w0000BCpiV9"/>
+            <property name="userId" value="0055w00000C3LSYAA3"/>
+            <property name="testRunCoverage" value="100%"/>
+            <property name="orgWideCoverage" value="2%"/>
+        </properties>
+        <testcase name="testGetCallout" classname="AnimalsCalloutsTest" time="0.04">
+        </testcase>
+        <testcase name="testPostCallout" classname="AnimalsCalloutsTest" time="0.01">
+        </testcase>
+    </testsuite>
+</testsuites>

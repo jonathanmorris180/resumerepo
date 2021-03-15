@@ -1,0 +1,5 @@
+<design:component>
+    <design:attribute name="zoomLevel" label="Zoom Level"/>
+    <design:attribute name="width" label="Width"/>
+    <design:attribute name="height" label="Height"/>
+</design:component>

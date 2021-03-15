@@ -1,0 +1,198 @@
+{
+    "summary": {
+        "outcome": "Passed",
+        "testsRan": 1,
+        "passing": 1,
+        "failing": 0,
+        "skipped": 0,
+        "passRate": "100%",
+        "failRate": "0%",
+        "testStartTime": "Aug 12, 2020 10:10 PM",
+        "testExecutionTime": "32 ms",
+        "testTotalTime": "32 ms",
+        "commandTime": "3318 ms",
+        "hostname": "https://playful-shark-cj0qnn-dev-ed.my.salesforce.com",
+        "orgId": "00D5w0000050VTsEAM",
+        "username": "musicmanmorris@playful-shark-cj0qnn.com",
+        "testRunId": "7075w0000BFpTTf",
+        "userId": "0055w00000C3LSYAA3",
+        "testRunCoverage": "100%",
+        "orgWideCoverage": "2%"
+    },
+    "tests": [
+        {
+            "attributes": {
+                "type": "ApexTestResult",
+                "url": "/services/data/v49.0/tooling/sobjects/ApexTestResult/07M5w000009kSTOEA2"
+            },
+            "Id": "07M5w000009kSTOEA2",
+            "QueueItemId": "7095w000000FMzHAAW",
+            "StackTrace": null,
+            "Message": null,
+            "AsyncApexJobId": "7075w0000BFpTTfAQN",
+            "MethodName": "testCallout",
+            "Outcome": "Pass",
+            "ApexClass": {
+                "attributes": {
+                    "type": "ApexClass",
+                    "url": "/services/data/v49.0/tooling/sobjects/ApexClass/01p5w00000Ka6dbAAB"
+                },
+                "Id": "01p5w00000Ka6dbAAB",
+                "Name": "ParkLocatorTest",
+                "NamespacePrefix": null
+            },
+            "RunTime": 32,
+            "FullName": "ParkLocatorTest.testCallout"
+        }
+    ],
+    "coverage": {
+        "coverage": [
+            {
+                "id": "01p5w00000Ka6dWAAR",
+                "name": "ParkLocator",
+                "totalLines": 3,
+                "lines": {
+                    "2": 1,
+                    "3": 1,
+                    "4": 1
+                },
+                "totalCovered": 3,
+                "coveredPercent": 100
+            },
+            {
+                "id": "01p5w00000Ka6dMAAR",
+                "name": "ParkService",
+                "totalLines": 27,
+                "lines": {
+                    "6": 1,
+                    "7": 1,
+                    "8": 1,
+                    "12": 1,
+                    "13": 1,
+                    "14": 1,
+                    "17": 1,
+                    "24": 1,
+                    "25": 1,
+                    "26": 1,
+                    "27": 1,
+                    "28": 1,
+                    "29": 1,
+                    "30": 1,
+                    "31": 1,
+                    "32": 1,
+                    "33": 1,
+                    "34": 1,
+                    "35": 1,
+                    "36": 1,
+                    "37": 1,
+                    "38": 1,
+                    "39": 1,
+                    "40": 1,
+                    "41": 1,
+                    "43": 1,
+                    "44": 1
+                },
+                "totalCovered": 27,
+                "coveredPercent": 100
+            }
+        ],
+        "records": [
+            {
+                "attributes": {
+                    "type": "ApexCodeCoverage",
+                    "url": "/services/data/v49.0/tooling/sobjects/ApexCodeCoverage/7145w00000GLUJoAAP"
+                },
+                "ApexTestClass": {
+                    "attributes": {
+                        "type": "ApexClass",
+                        "url": "/services/data/v49.0/tooling/sobjects/ApexClass/01p5w00000Ka6dbAAB"
+                    },
+                    "Id": "01p5w00000Ka6dbAAB",
+                    "Name": "ParkLocatorTest"
+                },
+                "Coverage": {
+                    "coveredLines": [
+                        2,
+                        3,
+                        4
+                    ],
+                    "uncoveredLines": []
+                },
+                "TestMethodName": "testCallout",
+                "NumLinesCovered": 3,
+                "ApexClassOrTrigger": {
+                    "attributes": {
+                        "type": "Name",
+                        "url": "/services/data/v49.0/tooling/sobjects/ApexClass/01p5w00000Ka6dWAAR"
+                    },
+                    "Id": "01p5w00000Ka6dWAAR",
+                    "Name": "ParkLocator"
+                },
+                "NumLinesUncovered": 0
+            },
+            {
+                "attributes": {
+                    "type": "ApexCodeCoverage",
+                    "url": "/services/data/v49.0/tooling/sobjects/ApexCodeCoverage/7145w00000GLUJpAAP"
+                },
+                "ApexTestClass": {
+                    "attributes": {
+                        "type": "ApexClass",
+                        "url": "/services/data/v49.0/tooling/sobjects/ApexClass/01p5w00000Ka6dbAAB"
+                    },
+                    "Id": "01p5w00000Ka6dbAAB",
+                    "Name": "ParkLocatorTest"
+                },
+                "Coverage": {
+                    "coveredLines": [
+                        6,
+                        7,
+                        8,
+                        12,
+                        13,
+                        14,
+                        17,
+                        24,
+                        25,
+                        26,
+                        27,
+                        28,
+                        29,
+                        30,
+                        31,
+                        32,
+                        33,
+                        34,
+                        35,
+                        36,
+                        37,
+                        38,
+                        39,
+                        40,
+                        41,
+                        43,
+                        44
+                    ],
+                    "uncoveredLines": []
+                },
+                "TestMethodName": "testCallout",
+                "NumLinesCovered": 27,
+                "ApexClassOrTrigger": {
+                    "attributes": {
+                        "type": "Name",
+                        "url": "/services/data/v49.0/tooling/sobjects/ApexClass/01p5w00000Ka6dMAAR"
+                    },
+                    "Id": "01p5w00000Ka6dMAAR",
+                    "Name": "ParkService"
+                },
+                "NumLinesUncovered": 0
+            }
+        ],
+        "summary": {
+            "totalLines": 30,
+            "coveredLines": 30,
+            "testRunCoverage": "100%",
+            "orgWideCoverage": "2%"
+        }
+    }
+}

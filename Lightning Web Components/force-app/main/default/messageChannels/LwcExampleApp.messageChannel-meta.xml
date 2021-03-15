@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningMessageChannel xmlns="http://soap.sforce.com/2006/04/metadata">
+    <masterLabel>LWC Message Channel</masterLabel>
+    <isExposed>true</isExposed>
+    <description>Message Channel for LWC example app</description>
+    <lightningMessageFields>
+        <fieldName>filterChange</fieldName>
+    </lightningMessageFields>
+    <lightningMessageFields>
+        <fieldName>productSelected</fieldName>
+    </lightningMessageFields>
+</LightningMessageChannel>

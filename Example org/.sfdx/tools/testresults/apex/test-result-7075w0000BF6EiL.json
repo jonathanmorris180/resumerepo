@@ -1,0 +1,123 @@
+{
+    "summary": {
+        "outcome": "Passed",
+        "testsRan": 1,
+        "passing": 1,
+        "failing": 0,
+        "skipped": 0,
+        "passRate": "100%",
+        "failRate": "0%",
+        "testStartTime": "Aug 12, 2020 12:21 AM",
+        "testExecutionTime": "49 ms",
+        "testTotalTime": "49 ms",
+        "commandTime": "13338 ms",
+        "hostname": "https://playful-shark-cj0qnn-dev-ed.my.salesforce.com",
+        "orgId": "00D5w0000050VTsEAM",
+        "username": "musicmanmorris@playful-shark-cj0qnn.com",
+        "testRunId": "7075w0000BF6EiL",
+        "userId": "0055w00000C3LSYAA3",
+        "testRunCoverage": "100%",
+        "orgWideCoverage": "1%"
+    },
+    "tests": [
+        {
+            "attributes": {
+                "type": "ApexTestResult",
+                "url": "/services/data/v49.0/tooling/sobjects/ApexTestResult/07M5w000009kSCmEAM"
+            },
+            "Id": "07M5w000009kSCmEAM",
+            "QueueItemId": "7095w000000FMxWAAW",
+            "StackTrace": null,
+            "Message": null,
+            "AsyncApexJobId": "7075w0000BF6EiLAQV",
+            "MethodName": "testCallout",
+            "Outcome": "Pass",
+            "ApexClass": {
+                "attributes": {
+                    "type": "ApexClass",
+                    "url": "/services/data/v49.0/tooling/sobjects/ApexClass/01p5w00000Ka6E8AAJ"
+                },
+                "Id": "01p5w00000Ka6E8AAJ",
+                "Name": "AnimalLocatorTest",
+                "NamespacePrefix": null
+            },
+            "RunTime": 49,
+            "FullName": "AnimalLocatorTest.testCallout"
+        }
+    ],
+    "coverage": {
+        "coverage": [
+            {
+                "id": "01p5w00000Ka64kAAB",
+                "name": "AnimalLocator",
+                "totalLines": 12,
+                "lines": {
+                    "2": 1,
+                    "3": 1,
+                    "4": 1,
+                    "5": 1,
+                    "6": 1,
+                    "7": 1,
+                    "8": 1,
+                    "12": 1,
+                    "13": 1,
+                    "14": 1,
+                    "16": 1,
+                    "18": 1
+                },
+                "totalCovered": 12,
+                "coveredPercent": 100
+            }
+        ],
+        "records": [
+            {
+                "attributes": {
+                    "type": "ApexCodeCoverage",
+                    "url": "/services/data/v49.0/tooling/sobjects/ApexCodeCoverage/7145w00000GLU4tAAH"
+                },
+                "ApexTestClass": {
+                    "attributes": {
+                        "type": "ApexClass",
+                        "url": "/services/data/v49.0/tooling/sobjects/ApexClass/01p5w00000Ka6E8AAJ"
+                    },
+                    "Id": "01p5w00000Ka6E8AAJ",
+                    "Name": "AnimalLocatorTest"
+                },
+                "Coverage": {
+                    "coveredLines": [
+                        2,
+                        3,
+                        4,
+                        5,
+                        6,
+                        7,
+                        8,
+                        12,
+                        13,
+                        14,
+                        16,
+                        18
+                    ],
+                    "uncoveredLines": []
+                },
+                "TestMethodName": "testCallout",
+                "NumLinesCovered": 12,
+                "ApexClassOrTrigger": {
+                    "attributes": {
+                        "type": "Name",
+                        "url": "/services/data/v49.0/tooling/sobjects/ApexClass/01p5w00000Ka64kAAB"
+                    },
+                    "Id": "01p5w00000Ka64kAAB",
+                    "Name": "AnimalLocator"
+                },
+                "NumLinesUncovered": 0
+            }
+        ],
+        "summary": {
+            "totalLines": 12,
+            "coveredLines": 12,
+            "testRunCoverage": "100%",
+            "orgWideCoverage": "1%"
+        }
+    }
+}

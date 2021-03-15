@@ -1,0 +1,173 @@
+{
+    "summary": {
+        "outcome": "Failed",
+        "testsRan": 1,
+        "passing": 0,
+        "failing": 1,
+        "skipped": 0,
+        "passRate": "0%",
+        "failRate": "100%",
+        "testStartTime": "Aug 4, 2020 11:07 PM",
+        "testExecutionTime": "56 ms",
+        "testTotalTime": "56 ms",
+        "commandTime": "3290 ms",
+        "hostname": "https://playful-shark-cj0qnn-dev-ed.my.salesforce.com",
+        "orgId": "00D5w0000050VTsEAM",
+        "username": "musicmanmorris@playful-shark-cj0qnn.com",
+        "testRunId": "7075w0000BApa5w",
+        "userId": "0055w00000C3LSYAA3",
+        "testRunCoverage": "94%",
+        "orgWideCoverage": "1%"
+    },
+    "tests": [
+        {
+            "attributes": {
+                "type": "ApexTestResult",
+                "url": "/services/data/v49.0/tooling/sobjects/ApexTestResult/07M5w000009kQCQEA2"
+            },
+            "Id": "07M5w000009kQCQEA2",
+            "QueueItemId": "7095w000000FMjYAAW",
+            "StackTrace": "Class.AddPrimaryContactTest.test: line 20, column 1",
+            "Message": "System.AssertException: Assertion Failed: Expected: 50, Actual: 0",
+            "AsyncApexJobId": "7075w0000BApa5wAQB",
+            "MethodName": "test",
+            "Outcome": "Fail",
+            "ApexClass": {
+                "attributes": {
+                    "type": "ApexClass",
+                    "url": "/services/data/v49.0/tooling/sobjects/ApexClass/01p5w00000Ka3lcAAB"
+                },
+                "Id": "01p5w00000Ka3lcAAB",
+                "Name": "AddPrimaryContactTest",
+                "NamespacePrefix": null
+            },
+            "RunTime": 56,
+            "FullName": "AddPrimaryContactTest.test"
+        }
+    ],
+    "coverage": {
+        "coverage": [
+            {
+                "id": "01p5w00000Ka3lIAAR",
+                "name": "LeadProcessor",
+                "totalLines": 9,
+                "lines": {
+                    "3": 1,
+                    "4": 1,
+                    "6": 1,
+                    "7": 1,
+                    "8": 1,
+                    "9": 1,
+                    "10": 1,
+                    "12": 1,
+                    "14": 1
+                },
+                "totalCovered": 9,
+                "coveredPercent": 100
+            },
+            {
+                "id": "01p5w00000Ka3lXAAR",
+                "name": "AddPrimaryContact",
+                "totalLines": 8,
+                "lines": {
+                    "5": 1,
+                    "6": 1,
+                    "7": 1,
+                    "9": 1,
+                    "10": 1,
+                    "11": 1,
+                    "12": 0,
+                    "14": 1
+                },
+                "totalCovered": 7,
+                "coveredPercent": 87.5
+            }
+        ],
+        "records": [
+            {
+                "attributes": {
+                    "type": "ApexCodeCoverage",
+                    "url": "/services/data/v49.0/tooling/sobjects/ApexCodeCoverage/7145w00000GLRsfAAH"
+                },
+                "ApexTestClass": {
+                    "attributes": {
+                        "type": "ApexClass",
+                        "url": "/services/data/v49.0/tooling/sobjects/ApexClass/01p5w00000Ka3lNAAR"
+                    },
+                    "Id": "01p5w00000Ka3lNAAR",
+                    "Name": "LeadProcessorTest"
+                },
+                "Coverage": {
+                    "coveredLines": [
+                        3,
+                        4,
+                        6,
+                        7,
+                        8,
+                        9,
+                        10,
+                        12,
+                        14
+                    ],
+                    "uncoveredLines": []
+                },
+                "TestMethodName": "test",
+                "NumLinesCovered": 9,
+                "ApexClassOrTrigger": {
+                    "attributes": {
+                        "type": "Name",
+                        "url": "/services/data/v49.0/tooling/sobjects/ApexClass/01p5w00000Ka3lIAAR"
+                    },
+                    "Id": "01p5w00000Ka3lIAAR",
+                    "Name": "LeadProcessor"
+                },
+                "NumLinesUncovered": 0
+            },
+            {
+                "attributes": {
+                    "type": "ApexCodeCoverage",
+                    "url": "/services/data/v49.0/tooling/sobjects/ApexCodeCoverage/7145w00000GLRskAAH"
+                },
+                "ApexTestClass": {
+                    "attributes": {
+                        "type": "ApexClass",
+                        "url": "/services/data/v49.0/tooling/sobjects/ApexClass/01p5w00000Ka3lcAAB"
+                    },
+                    "Id": "01p5w00000Ka3lcAAB",
+                    "Name": "AddPrimaryContactTest"
+                },
+                "Coverage": {
+                    "coveredLines": [
+                        5,
+                        6,
+                        7,
+                        9,
+                        10,
+                        11,
+                        14
+                    ],
+                    "uncoveredLines": [
+                        12
+                    ]
+                },
+                "TestMethodName": "test",
+                "NumLinesCovered": 7,
+                "ApexClassOrTrigger": {
+                    "attributes": {
+                        "type": "Name",
+                        "url": "/services/data/v49.0/tooling/sobjects/ApexClass/01p5w00000Ka3lXAAR"
+                    },
+                    "Id": "01p5w00000Ka3lXAAR",
+                    "Name": "AddPrimaryContact"
+                },
+                "NumLinesUncovered": 1
+            }
+        ],
+        "summary": {
+            "totalLines": 17,
+            "coveredLines": 16,
+            "testRunCoverage": "94%",
+            "orgWideCoverage": "1%"
+        }
+    }
+}

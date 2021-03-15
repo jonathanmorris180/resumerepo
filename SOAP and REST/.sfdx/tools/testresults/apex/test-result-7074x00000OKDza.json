@@ -1,0 +1,42 @@
+{
+  "summary": {
+    "outcome": "Failed",
+    "testsRan": 1,
+    "passing": 0,
+    "failing": 1,
+    "skipped": 0,
+    "passRate": "0%",
+    "failRate": "100%",
+    "skipRate": "0%",
+    "testStartTime": "Sun Feb 07 2021 7:51:15 PM",
+    "testExecutionTimeInMs": 14,
+    "testTotalTimeInMs": 14,
+    "commandTimeInMs": 635,
+    "hostname": "https://brave-panda-se4di4-dev-ed.my.salesforce.com",
+    "orgId": "00D4x000006r2r3EAA",
+    "username": "musicmanmorris@brave-panda-se4di4.com",
+    "testRunId": "7074x00000OKDza",
+    "userId": "0054x000003pP0oAAE"
+  },
+  "tests": [
+    {
+      "id": "07M4x000000M4x6EAC",
+      "queueItemId": "7094x000000AG7FAAW",
+      "stackTrace": "Class.System.Test.setMock: line 57, column 1\nClass.BillingCalloutServiceTest.testCalloutSuccess: line 17, column 1",
+      "message": "System.TypeException: Mock object doesn't implement the supplied interface",
+      "asyncApexJobId": "7074x00000OKDzaAAH",
+      "methodName": "testCalloutSuccess",
+      "outcome": "Fail",
+      "apexLogId": "07L4x000001ri4jEAA",
+      "apexClass": {
+        "id": "01p4x00000Hko3gAAB",
+        "name": "BillingCalloutServiceTest",
+        "namespacePrefix": null,
+        "fullName": "BillingCalloutServiceTest"
+      },
+      "runTime": 14,
+      "testTimestamp": "2021-02-08T02:51:16.000+0000",
+      "fullName": "BillingCalloutServiceTest.testCalloutSuccess"
+    }
+  ]
+}

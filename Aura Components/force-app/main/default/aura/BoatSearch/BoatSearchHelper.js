@@ -1,0 +1,4 @@
+({
+    myMethod : function(component, boatId) {
+    }
+})

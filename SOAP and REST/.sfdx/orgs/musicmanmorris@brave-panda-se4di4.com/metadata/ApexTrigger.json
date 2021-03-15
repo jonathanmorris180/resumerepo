@@ -1,0 +1,16 @@
+{
+  "status": 0,
+  "result": {
+    "createdById": "0054x000003pP0oAAE",
+    "createdByName": "Jonathan Morris",
+    "createdDate": "2021-01-25T04:37:10.000Z",
+    "fileName": "triggers/ProjectTrigger.trigger",
+    "fullName": "ProjectTrigger",
+    "id": "01q4x000000Qph1AAC",
+    "lastModifiedById": "0054x000003pP0oAAE",
+    "lastModifiedByName": "Jonathan Morris",
+    "lastModifiedDate": "2021-01-25T04:37:10.000Z",
+    "manageableState": "installedEditable",
+    "type": "ApexTrigger"
+  }
+}

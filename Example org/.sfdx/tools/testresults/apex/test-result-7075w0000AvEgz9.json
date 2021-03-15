@@ -1,0 +1,194 @@
+{
+    "summary": {
+        "outcome": "Failed",
+        "testsRan": 2,
+        "passing": 1,
+        "failing": 1,
+        "skipped": 0,
+        "passRate": "50%",
+        "failRate": "50%",
+        "testStartTime": "Jul 11, 2020 12:21 AM",
+        "testExecutionTime": "21 ms",
+        "testTotalTime": "21 ms",
+        "commandTime": "4900 ms",
+        "hostname": "https://playful-shark-cj0qnn-dev-ed.my.salesforce.com",
+        "orgId": "00D5w0000050VTsEAM",
+        "username": "musicmanmorris@playful-shark-cj0qnn.com",
+        "testRunId": "7075w0000AvEgz9",
+        "userId": "0055w00000C3LSYAA3",
+        "testRunCoverage": "100%",
+        "orgWideCoverage": "17%"
+    },
+    "tests": [
+        {
+            "attributes": {
+                "type": "ApexTestResult",
+                "url": "/services/data/v48.0/tooling/sobjects/ApexTestResult/07M5w000009kDE4EAM"
+            },
+            "Id": "07M5w000009kDE4EAM",
+            "QueueItemId": "7095w000000FKh7AAG",
+            "StackTrace": "Class.TestVerifyDate.testSetEndOfMonth: line 7, column 1",
+            "Message": "System.AssertException: Assertion Failed: Expected: 2020-08-20 00:00:00, Actual: 2020-07-31 00:00:00",
+            "AsyncApexJobId": "7075w0000AvEgz9AQC",
+            "MethodName": "testSetEndOfMonth",
+            "Outcome": "Fail",
+            "ApexClass": {
+                "attributes": {
+                    "type": "ApexClass",
+                    "url": "/services/data/v48.0/tooling/sobjects/ApexClass/01p5w00000KZhwPAAT"
+                },
+                "Id": "01p5w00000KZhwPAAT",
+                "Name": "TestVerifyDate",
+                "NamespacePrefix": null
+            },
+            "RunTime": 16,
+            "FullName": "TestVerifyDate.testSetEndOfMonth"
+        },
+        {
+            "attributes": {
+                "type": "ApexTestResult",
+                "url": "/services/data/v48.0/tooling/sobjects/ApexTestResult/07M5w000009kDE5EAM"
+            },
+            "Id": "07M5w000009kDE5EAM",
+            "QueueItemId": "7095w000000FKh7AAG",
+            "StackTrace": null,
+            "Message": null,
+            "AsyncApexJobId": "7075w0000AvEgz9AQC",
+            "MethodName": "testUseDateTwo",
+            "Outcome": "Pass",
+            "ApexClass": {
+                "attributes": {
+                    "type": "ApexClass",
+                    "url": "/services/data/v48.0/tooling/sobjects/ApexClass/01p5w00000KZhwPAAT"
+                },
+                "Id": "01p5w00000KZhwPAAT",
+                "Name": "TestVerifyDate",
+                "NamespacePrefix": null
+            },
+            "RunTime": 5,
+            "FullName": "TestVerifyDate.testUseDateTwo"
+        }
+    ],
+    "coverage": {
+        "coverage": [
+            {
+                "id": "01p5w00000KZhwKAAT",
+                "name": "VerifyDate",
+                "totalLines": 13,
+                "lines": {
+                    "4": 1,
+                    "6": 1,
+                    "7": 1,
+                    "9": 1,
+                    "14": 1,
+                    "16": 1,
+                    "19": 1,
+                    "20": 1,
+                    "21": 1,
+                    "25": 1,
+                    "26": 1,
+                    "27": 1,
+                    "28": 1
+                },
+                "totalCovered": 13,
+                "coveredPercent": 100
+            }
+        ],
+        "records": [
+            {
+                "attributes": {
+                    "type": "ApexCodeCoverage",
+                    "url": "/services/data/v48.0/tooling/sobjects/ApexCodeCoverage/7145w00000GKwfdAAD"
+                },
+                "ApexTestClass": {
+                    "attributes": {
+                        "type": "ApexClass",
+                        "url": "/services/data/v48.0/tooling/sobjects/ApexClass/01p5w00000KZhwPAAT"
+                    },
+                    "Id": "01p5w00000KZhwPAAT",
+                    "Name": "TestVerifyDate"
+                },
+                "Coverage": {
+                    "coveredLines": [
+                        4,
+                        6,
+                        9,
+                        14,
+                        16,
+                        19,
+                        20,
+                        25,
+                        26,
+                        27,
+                        28
+                    ],
+                    "uncoveredLines": [
+                        7,
+                        21
+                    ]
+                },
+                "TestMethodName": "testSetEndOfMonth",
+                "NumLinesCovered": 11,
+                "ApexClassOrTrigger": {
+                    "attributes": {
+                        "type": "Name",
+                        "url": "/services/data/v48.0/tooling/sobjects/ApexClass/01p5w00000KZhwKAAT"
+                    },
+                    "Id": "01p5w00000KZhwKAAT",
+                    "Name": "VerifyDate"
+                },
+                "NumLinesUncovered": 2
+            },
+            {
+                "attributes": {
+                    "type": "ApexCodeCoverage",
+                    "url": "/services/data/v48.0/tooling/sobjects/ApexCodeCoverage/7145w00000GKwfeAAD"
+                },
+                "ApexTestClass": {
+                    "attributes": {
+                        "type": "ApexClass",
+                        "url": "/services/data/v48.0/tooling/sobjects/ApexClass/01p5w00000KZhwPAAT"
+                    },
+                    "Id": "01p5w00000KZhwPAAT",
+                    "Name": "TestVerifyDate"
+                },
+                "Coverage": {
+                    "coveredLines": [
+                        4,
+                        6,
+                        7,
+                        14,
+                        16,
+                        19,
+                        20,
+                        21,
+                        25
+                    ],
+                    "uncoveredLines": [
+                        9,
+                        26,
+                        27,
+                        28
+                    ]
+                },
+                "TestMethodName": "testUseDateTwo",
+                "NumLinesCovered": 9,
+                "ApexClassOrTrigger": {
+                    "attributes": {
+                        "type": "Name",
+                        "url": "/services/data/v48.0/tooling/sobjects/ApexClass/01p5w00000KZhwKAAT"
+                    },
+                    "Id": "01p5w00000KZhwKAAT",
+                    "Name": "VerifyDate"
+                },
+                "NumLinesUncovered": 4
+            }
+        ],
+        "summary": {
+            "totalLines": 13,
+            "coveredLines": 13,
+            "testRunCoverage": "100%",
+            "orgWideCoverage": "17%"
+        }
+    }
+}

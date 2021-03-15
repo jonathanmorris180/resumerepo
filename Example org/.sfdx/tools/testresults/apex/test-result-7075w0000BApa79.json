@@ -1,0 +1,117 @@
+{
+    "summary": {
+        "outcome": "Passed",
+        "testsRan": 1,
+        "passing": 1,
+        "failing": 0,
+        "skipped": 0,
+        "passRate": "100%",
+        "failRate": "0%",
+        "testStartTime": "Aug 4, 2020 11:07 PM",
+        "testExecutionTime": "1618 ms",
+        "testTotalTime": "1618 ms",
+        "commandTime": "5836 ms",
+        "hostname": "https://playful-shark-cj0qnn-dev-ed.my.salesforce.com",
+        "orgId": "00D5w0000050VTsEAM",
+        "username": "musicmanmorris@playful-shark-cj0qnn.com",
+        "testRunId": "7075w0000BApa79",
+        "userId": "0055w00000C3LSYAA3",
+        "testRunCoverage": "100%",
+        "orgWideCoverage": "0%"
+    },
+    "tests": [
+        {
+            "attributes": {
+                "type": "ApexTestResult",
+                "url": "/services/data/v49.0/tooling/sobjects/ApexTestResult/07M5w000009kQCLEA2"
+            },
+            "Id": "07M5w000009kQCLEA2",
+            "QueueItemId": "7095w000000FMjTAAW",
+            "StackTrace": null,
+            "Message": null,
+            "AsyncApexJobId": "7075w0000BApa79AQB",
+            "MethodName": "test",
+            "Outcome": "Pass",
+            "ApexClass": {
+                "attributes": {
+                    "type": "ApexClass",
+                    "url": "/services/data/v49.0/tooling/sobjects/ApexClass/01p5w00000Ka3lNAAR"
+                },
+                "Id": "01p5w00000Ka3lNAAR",
+                "Name": "LeadProcessorTest",
+                "NamespacePrefix": null
+            },
+            "RunTime": 1618,
+            "FullName": "LeadProcessorTest.test"
+        }
+    ],
+    "coverage": {
+        "coverage": [
+            {
+                "id": "01p5w00000Ka3lIAAR",
+                "name": "LeadProcessor",
+                "totalLines": 9,
+                "lines": {
+                    "3": 1,
+                    "4": 1,
+                    "6": 1,
+                    "7": 1,
+                    "8": 1,
+                    "9": 1,
+                    "10": 1,
+                    "12": 1,
+                    "14": 1
+                },
+                "totalCovered": 9,
+                "coveredPercent": 100
+            }
+        ],
+        "records": [
+            {
+                "attributes": {
+                    "type": "ApexCodeCoverage",
+                    "url": "/services/data/v49.0/tooling/sobjects/ApexCodeCoverage/7145w00000GLRsfAAH"
+                },
+                "ApexTestClass": {
+                    "attributes": {
+                        "type": "ApexClass",
+                        "url": "/services/data/v49.0/tooling/sobjects/ApexClass/01p5w00000Ka3lNAAR"
+                    },
+                    "Id": "01p5w00000Ka3lNAAR",
+                    "Name": "LeadProcessorTest"
+                },
+                "Coverage": {
+                    "coveredLines": [
+                        3,
+                        4,
+                        6,
+                        7,
+                        8,
+                        9,
+                        10,
+                        12,
+                        14
+                    ],
+                    "uncoveredLines": []
+                },
+                "TestMethodName": "test",
+                "NumLinesCovered": 9,
+                "ApexClassOrTrigger": {
+                    "attributes": {
+                        "type": "Name",
+                        "url": "/services/data/v49.0/tooling/sobjects/ApexClass/01p5w00000Ka3lIAAR"
+                    },
+                    "Id": "01p5w00000Ka3lIAAR",
+                    "Name": "LeadProcessor"
+                },
+                "NumLinesUncovered": 0
+            }
+        ],
+        "summary": {
+            "totalLines": 9,
+            "coveredLines": 9,
+            "testRunCoverage": "100%",
+            "orgWideCoverage": "0%"
+        }
+    }
+}

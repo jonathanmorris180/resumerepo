@@ -1,0 +1,114 @@
+{
+    "summary": {
+        "outcome": "Failed",
+        "testsRan": 1,
+        "passing": 0,
+        "failing": 1,
+        "skipped": 0,
+        "passRate": "0%",
+        "failRate": "100%",
+        "testStartTime": "Aug 6, 2020 1:13 AM",
+        "testExecutionTime": "82 ms",
+        "testTotalTime": "82 ms",
+        "commandTime": "4216 ms",
+        "hostname": "https://playful-shark-cj0qnn-dev-ed.my.salesforce.com",
+        "orgId": "00D5w0000050VTsEAM",
+        "username": "musicmanmorris@playful-shark-cj0qnn.com",
+        "testRunId": "7075w0000BBVE7h",
+        "userId": "0055w00000C3LSYAA3",
+        "testRunCoverage": "71%",
+        "orgWideCoverage": "0%"
+    },
+    "tests": [
+        {
+            "attributes": {
+                "type": "ApexTestResult",
+                "url": "/services/data/v49.0/tooling/sobjects/ApexTestResult/07M5w000009kQVhEAM"
+            },
+            "Id": "07M5w000009kQVhEAM",
+            "QueueItemId": "7095w000000FMlkAAG",
+            "StackTrace": "Class.DailyLeadProcessorTest.test: line 22, column 1",
+            "Message": "System.AssertException: Assertion Failed: Expected: 200, Actual: 0",
+            "AsyncApexJobId": "7075w0000BBVE7hAQH",
+            "MethodName": "test",
+            "Outcome": "Fail",
+            "ApexClass": {
+                "attributes": {
+                    "type": "ApexClass",
+                    "url": "/services/data/v49.0/tooling/sobjects/ApexClass/01p5w00000Ka4LQAAZ"
+                },
+                "Id": "01p5w00000Ka4LQAAZ",
+                "Name": "DailyLeadProcessorTest",
+                "NamespacePrefix": null
+            },
+            "RunTime": 82,
+            "FullName": "DailyLeadProcessorTest.test"
+        }
+    ],
+    "coverage": {
+        "coverage": [
+            {
+                "id": "01p5w00000Ka4LLAAZ",
+                "name": "DailyLeadProcessor",
+                "totalLines": 7,
+                "lines": {
+                    "2": 1,
+                    "3": 1,
+                    "4": 1,
+                    "6": 1,
+                    "7": 0,
+                    "8": 0,
+                    "10": 1
+                },
+                "totalCovered": 5,
+                "coveredPercent": 71.42857142857143
+            }
+        ],
+        "records": [
+            {
+                "attributes": {
+                    "type": "ApexCodeCoverage",
+                    "url": "/services/data/v49.0/tooling/sobjects/ApexCodeCoverage/7145w00000GLSTOAA5"
+                },
+                "ApexTestClass": {
+                    "attributes": {
+                        "type": "ApexClass",
+                        "url": "/services/data/v49.0/tooling/sobjects/ApexClass/01p5w00000Ka4LQAAZ"
+                    },
+                    "Id": "01p5w00000Ka4LQAAZ",
+                    "Name": "DailyLeadProcessorTest"
+                },
+                "Coverage": {
+                    "coveredLines": [
+                        2,
+                        3,
+                        4,
+                        6,
+                        10
+                    ],
+                    "uncoveredLines": [
+                        7,
+                        8
+                    ]
+                },
+                "TestMethodName": "test",
+                "NumLinesCovered": 5,
+                "ApexClassOrTrigger": {
+                    "attributes": {
+                        "type": "Name",
+                        "url": "/services/data/v49.0/tooling/sobjects/ApexClass/01p5w00000Ka4LLAAZ"
+                    },
+                    "Id": "01p5w00000Ka4LLAAZ",
+                    "Name": "DailyLeadProcessor"
+                },
+                "NumLinesUncovered": 2
+            }
+        ],
+        "summary": {
+            "totalLines": 7,
+            "coveredLines": 5,
+            "testRunCoverage": "71%",
+            "orgWideCoverage": "0%"
+        }
+    }
+}

@@ -1,0 +1,247 @@
+{
+    "summary": {
+        "outcome": "Passed",
+        "testsRan": 1,
+        "passing": 1,
+        "failing": 0,
+        "skipped": 0,
+        "passRate": "100%",
+        "failRate": "0%",
+        "testStartTime": "Jul 13, 2020 10:33 PM",
+        "testExecutionTime": "877 ms",
+        "testTotalTime": "877 ms",
+        "commandTime": "4401 ms",
+        "hostname": "https://playful-shark-cj0qnn-dev-ed.my.salesforce.com",
+        "orgId": "00D5w0000050VTsEAM",
+        "username": "musicmanmorris@playful-shark-cj0qnn.com",
+        "testRunId": "7075w0000AwksBX",
+        "userId": "0055w00000C3LSYAA3",
+        "testRunCoverage": "93%",
+        "orgWideCoverage": "19%"
+    },
+    "tests": [
+        {
+            "attributes": {
+                "type": "ApexTestResult",
+                "url": "/services/data/v48.0/tooling/sobjects/ApexTestResult/07M5w000009kDk0EAE"
+            },
+            "Id": "07M5w000009kDk0EAE",
+            "QueueItemId": "7095w000000FKmdAAG",
+            "StackTrace": null,
+            "Message": null,
+            "AsyncApexJobId": "7075w0000AwksBXAQY",
+            "MethodName": "TestDeleteAccountWithOneOpportunity",
+            "Outcome": "Pass",
+            "ApexClass": {
+                "attributes": {
+                    "type": "ApexClass",
+                    "url": "/services/data/v48.0/tooling/sobjects/ApexClass/01p5w00000KZiNVAA1"
+                },
+                "Id": "01p5w00000KZiNVAA1",
+                "Name": "TestAccountDeletion",
+                "NamespacePrefix": null
+            },
+            "RunTime": 877,
+            "FullName": "TestAccountDeletion.TestDeleteAccountWithOneOpportunity"
+        }
+    ],
+    "coverage": {
+        "coverage": [
+            {
+                "id": "01q5w000000OcqJAAS",
+                "name": "HelloWorldTrigger",
+                "totalLines": 0,
+                "lines": {},
+                "totalCovered": 0,
+                "coveredPercent": null
+            },
+            {
+                "id": "01q5w000000OcrgAAC",
+                "name": "AccountAddressTrigger",
+                "totalLines": 3,
+                "lines": {
+                    "2": 1,
+                    "3": 1,
+                    "4": 0
+                },
+                "totalCovered": 2,
+                "coveredPercent": 66.66666666666666
+            },
+            {
+                "id": "01q5w000000Ocr2AAC",
+                "name": "AddRelatedRecord",
+                "totalLines": 9,
+                "lines": {
+                    "2": 1,
+                    "6": 1,
+                    "8": 1,
+                    "10": 1,
+                    "11": 1,
+                    "12": 1,
+                    "13": 1,
+                    "16": 1,
+                    "17": 1
+                },
+                "totalCovered": 9,
+                "coveredPercent": 100
+            },
+            {
+                "id": "01q5w000000Ocr7AAC",
+                "name": "AccountDeletion",
+                "totalLines": 4,
+                "lines": {
+                    "4": 1,
+                    "6": 1,
+                    "7": 1,
+                    "8": 1
+                },
+                "totalCovered": 4,
+                "coveredPercent": 100
+            }
+        ],
+        "records": [
+            {
+                "attributes": {
+                    "type": "ApexCodeCoverage",
+                    "url": "/services/data/v48.0/tooling/sobjects/ApexCodeCoverage/7145w00000GKwsAAAT"
+                },
+                "ApexTestClass": {
+                    "attributes": {
+                        "type": "ApexClass",
+                        "url": "/services/data/v48.0/tooling/sobjects/ApexClass/01p5w00000KZiNVAA1"
+                    },
+                    "Id": "01p5w00000KZiNVAA1",
+                    "Name": "TestAccountDeletion"
+                },
+                "Coverage": {
+                    "coveredLines": [],
+                    "uncoveredLines": []
+                },
+                "TestMethodName": "TestDeleteAccountWithOneOpportunity",
+                "NumLinesCovered": 0,
+                "ApexClassOrTrigger": {
+                    "attributes": {
+                        "type": "Name",
+                        "url": "/services/data/v48.0/tooling/sobjects/ApexTrigger/01q5w000000OcqJAAS"
+                    },
+                    "Id": "01q5w000000OcqJAAS",
+                    "Name": "HelloWorldTrigger"
+                },
+                "NumLinesUncovered": 0
+            },
+            {
+                "attributes": {
+                    "type": "ApexCodeCoverage",
+                    "url": "/services/data/v48.0/tooling/sobjects/ApexCodeCoverage/7145w00000GKwsBAAT"
+                },
+                "ApexTestClass": {
+                    "attributes": {
+                        "type": "ApexClass",
+                        "url": "/services/data/v48.0/tooling/sobjects/ApexClass/01p5w00000KZiNVAA1"
+                    },
+                    "Id": "01p5w00000KZiNVAA1",
+                    "Name": "TestAccountDeletion"
+                },
+                "Coverage": {
+                    "coveredLines": [
+                        2,
+                        3
+                    ],
+                    "uncoveredLines": [
+                        4
+                    ]
+                },
+                "TestMethodName": "TestDeleteAccountWithOneOpportunity",
+                "NumLinesCovered": 2,
+                "ApexClassOrTrigger": {
+                    "attributes": {
+                        "type": "Name",
+                        "url": "/services/data/v48.0/tooling/sobjects/ApexTrigger/01q5w000000OcrgAAC"
+                    },
+                    "Id": "01q5w000000OcrgAAC",
+                    "Name": "AccountAddressTrigger"
+                },
+                "NumLinesUncovered": 1
+            },
+            {
+                "attributes": {
+                    "type": "ApexCodeCoverage",
+                    "url": "/services/data/v48.0/tooling/sobjects/ApexCodeCoverage/7145w00000GKwsCAAT"
+                },
+                "ApexTestClass": {
+                    "attributes": {
+                        "type": "ApexClass",
+                        "url": "/services/data/v48.0/tooling/sobjects/ApexClass/01p5w00000KZiNVAA1"
+                    },
+                    "Id": "01p5w00000KZiNVAA1",
+                    "Name": "TestAccountDeletion"
+                },
+                "Coverage": {
+                    "coveredLines": [
+                        2,
+                        6,
+                        8,
+                        10,
+                        11,
+                        12,
+                        13,
+                        16,
+                        17
+                    ],
+                    "uncoveredLines": []
+                },
+                "TestMethodName": "TestDeleteAccountWithOneOpportunity",
+                "NumLinesCovered": 9,
+                "ApexClassOrTrigger": {
+                    "attributes": {
+                        "type": "Name",
+                        "url": "/services/data/v48.0/tooling/sobjects/ApexTrigger/01q5w000000Ocr2AAC"
+                    },
+                    "Id": "01q5w000000Ocr2AAC",
+                    "Name": "AddRelatedRecord"
+                },
+                "NumLinesUncovered": 0
+            },
+            {
+                "attributes": {
+                    "type": "ApexCodeCoverage",
+                    "url": "/services/data/v48.0/tooling/sobjects/ApexCodeCoverage/7145w00000GKwsDAAT"
+                },
+                "ApexTestClass": {
+                    "attributes": {
+                        "type": "ApexClass",
+                        "url": "/services/data/v48.0/tooling/sobjects/ApexClass/01p5w00000KZiNVAA1"
+                    },
+                    "Id": "01p5w00000KZiNVAA1",
+                    "Name": "TestAccountDeletion"
+                },
+                "Coverage": {
+                    "coveredLines": [
+                        4,
+                        6,
+                        7,
+                        8
+                    ],
+                    "uncoveredLines": []
+                },
+                "TestMethodName": "TestDeleteAccountWithOneOpportunity",
+                "NumLinesCovered": 4,
+                "ApexClassOrTrigger": {
+                    "attributes": {
+                        "type": "Name",
+                        "url": "/services/data/v48.0/tooling/sobjects/ApexTrigger/01q5w000000Ocr7AAC"
+                    },
+                    "Id": "01q5w000000Ocr7AAC",
+                    "Name": "AccountDeletion"
+                },
+                "NumLinesUncovered": 0
+            }
+        ],
+        "summary": {
+            "totalLines": 16,
+            "coveredLines": 15,
+            "testRunCoverage": "93%",
+            "orgWideCoverage": "19%"
+        }
+    }
+}

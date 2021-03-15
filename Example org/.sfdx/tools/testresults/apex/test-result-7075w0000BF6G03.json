@@ -1,0 +1,124 @@
+{
+    "summary": {
+        "outcome": "Failed",
+        "testsRan": 1,
+        "passing": 0,
+        "failing": 1,
+        "skipped": 0,
+        "passRate": "0%",
+        "failRate": "100%",
+        "testStartTime": "Aug 12, 2020 12:33 AM",
+        "testExecutionTime": "29 ms",
+        "testTotalTime": "29 ms",
+        "commandTime": "2690 ms",
+        "hostname": "https://playful-shark-cj0qnn-dev-ed.my.salesforce.com",
+        "orgId": "00D5w0000050VTsEAM",
+        "username": "musicmanmorris@playful-shark-cj0qnn.com",
+        "testRunId": "7075w0000BF6G03",
+        "userId": "0055w00000C3LSYAA3",
+        "testRunCoverage": "91%",
+        "orgWideCoverage": "1%"
+    },
+    "tests": [
+        {
+            "attributes": {
+                "type": "ApexTestResult",
+                "url": "/services/data/v49.0/tooling/sobjects/ApexTestResult/07M5w000009kSCwEAM"
+            },
+            "Id": "07M5w000009kSCwEAM",
+            "QueueItemId": "7095w000000FMxgAAG",
+            "StackTrace": "Class.AnimalLocator.getAnimalNameById: line 14, column 1\nClass.AnimalLocatorTest.testAnimalNameById: line 6, column 1",
+            "Message": "System.NullPointerException: Attempt to de-reference a null object",
+            "AsyncApexJobId": "7075w0000BF6G03AQF",
+            "MethodName": "testAnimalNameById",
+            "Outcome": "Fail",
+            "ApexClass": {
+                "attributes": {
+                    "type": "ApexClass",
+                    "url": "/services/data/v49.0/tooling/sobjects/ApexClass/01p5w00000Ka6E8AAJ"
+                },
+                "Id": "01p5w00000Ka6E8AAJ",
+                "Name": "AnimalLocatorTest",
+                "NamespacePrefix": null
+            },
+            "RunTime": 29,
+            "FullName": "AnimalLocatorTest.testAnimalNameById"
+        }
+    ],
+    "coverage": {
+        "coverage": [
+            {
+                "id": "01p5w00000Ka64kAAB",
+                "name": "AnimalLocator",
+                "totalLines": 12,
+                "lines": {
+                    "2": 1,
+                    "3": 1,
+                    "4": 1,
+                    "5": 1,
+                    "6": 1,
+                    "7": 1,
+                    "8": 1,
+                    "10": 1,
+                    "11": 1,
+                    "12": 1,
+                    "14": 1,
+                    "16": 0
+                },
+                "totalCovered": 11,
+                "coveredPercent": 91.66666666666666
+            }
+        ],
+        "records": [
+            {
+                "attributes": {
+                    "type": "ApexCodeCoverage",
+                    "url": "/services/data/v49.0/tooling/sobjects/ApexCodeCoverage/7145w00000GLU53AAH"
+                },
+                "ApexTestClass": {
+                    "attributes": {
+                        "type": "ApexClass",
+                        "url": "/services/data/v49.0/tooling/sobjects/ApexClass/01p5w00000Ka6E8AAJ"
+                    },
+                    "Id": "01p5w00000Ka6E8AAJ",
+                    "Name": "AnimalLocatorTest"
+                },
+                "Coverage": {
+                    "coveredLines": [
+                        2,
+                        3,
+                        4,
+                        5,
+                        6,
+                        7,
+                        8,
+                        10,
+                        11,
+                        12,
+                        14
+                    ],
+                    "uncoveredLines": [
+                        16
+                    ]
+                },
+                "TestMethodName": "testAnimalNameById",
+                "NumLinesCovered": 11,
+                "ApexClassOrTrigger": {
+                    "attributes": {
+                        "type": "Name",
+                        "url": "/services/data/v49.0/tooling/sobjects/ApexClass/01p5w00000Ka64kAAB"
+                    },
+                    "Id": "01p5w00000Ka64kAAB",
+                    "Name": "AnimalLocator"
+                },
+                "NumLinesUncovered": 1
+            }
+        ],
+        "summary": {
+            "totalLines": 12,
+            "coveredLines": 11,
+            "testRunCoverage": "91%",
+            "orgWideCoverage": "1%"
+        }
+    }
+}

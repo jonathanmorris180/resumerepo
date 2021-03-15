@@ -1,0 +1,42 @@
+{
+  "summary": {
+    "outcome": "Passed",
+    "testsRan": 1,
+    "passing": 1,
+    "failing": 0,
+    "skipped": 0,
+    "passRate": "100%",
+    "failRate": "0%",
+    "skipRate": "0%",
+    "testStartTime": "Sun Feb 07 2021 7:51:52 PM",
+    "testExecutionTimeInMs": 128,
+    "testTotalTimeInMs": 128,
+    "commandTimeInMs": 545,
+    "hostname": "https://brave-panda-se4di4-dev-ed.my.salesforce.com",
+    "orgId": "00D4x000006r2r3EAA",
+    "username": "musicmanmorris@brave-panda-se4di4.com",
+    "testRunId": "7074x00000OKEBt",
+    "userId": "0054x000003pP0oAAE"
+  },
+  "tests": [
+    {
+      "id": "07M4x000000M4xBEAS",
+      "queueItemId": "7094x000000AG7KAAW",
+      "stackTrace": null,
+      "message": null,
+      "asyncApexJobId": "7074x00000OKEBtAAP",
+      "methodName": "testCalloutSuccess",
+      "outcome": "Pass",
+      "apexLogId": "07L4x000001ri4tEAA",
+      "apexClass": {
+        "id": "01p4x00000Hko3gAAB",
+        "name": "BillingCalloutServiceTest",
+        "namespacePrefix": null,
+        "fullName": "BillingCalloutServiceTest"
+      },
+      "runTime": 128,
+      "testTimestamp": "2021-02-08T02:51:53.000+0000",
+      "fullName": "BillingCalloutServiceTest.testCalloutSuccess"
+    }
+  ]
+}

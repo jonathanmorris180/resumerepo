@@ -1,0 +1,33 @@
+<aura:component controller="BoatSearchResults">
+    <aura:attribute name="boats" type="Boat__c[]"/>
+    <aura:attribute name="errors" type="Object[]"/>
+    <aura:attribute name="boatTypeId" type="Object"/>
+    <aura:attribute name="selectedBoatId" type="String"/>
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <aura:handler name="boatSelect" event="c:BoatSelect" action="{!c.onBoatSelect}"/>
+    <aura:method name="search" action="{!c.doSearch}" access="public">
+        <aura:attribute name="boatTypeId" type="Object"/>
+    </aura:method>
+
+    <aura:if isTrue="{!not(empty(v.boats))}">
+        <lightning:layout multipleRows="true">
+            <aura:iteration items="{!v.boats}" var="boat">
+                <lightning:layoutItem size="3" padding="horizontal-small" class="slds-p-vertical_xx-small">
+                    <c:BoatTile boat="{!boat}" selected="{! boat.Id == v.selectedBoatId ? true : false }"/>
+                </lightning:layoutItem>
+            </aura:iteration>
+        </lightning:layout>
+        <aura:set attribute="else">
+            <lightning:layout class="slds-align_absolute-center">
+                No boats found
+            </lightning:layout>
+        </aura:set>
+    </aura:if>
+
+    <aura:if isTrue="{!not(empty(v.errors))}">
+        <aura:iteration items="{!v.errors}" var="error">
+            <lightning:formattedText value="{!error}"/>
+        </aura:iteration>
+    </aura:if>
+
+</aura:component>	

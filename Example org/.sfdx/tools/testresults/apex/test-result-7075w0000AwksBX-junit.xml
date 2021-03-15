@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+    <testsuite name="force.apex" timestamp="2020-07-13T22:33:44-06:00" hostname="https://playful-shark-cj0qnn-dev-ed.my.salesforce.com" tests="1" failures="0"  errors="0"  time="0.88">
+        <properties>
+            <property name="outcome" value="Passed"/>
+            <property name="testsRan" value="1"/>
+            <property name="passing" value="1"/>
+            <property name="failing" value="0"/>
+            <property name="skipped" value="0"/>
+            <property name="passRate" value="100%"/>
+            <property name="failRate" value="0%"/>
+            <property name="testStartTime" value="Jul 13, 2020 10:33 PM"/>
+            <property name="testExecutionTime" value="0.88 s"/>
+            <property name="testTotalTime" value="0.88 s"/>
+            <property name="commandTime" value="4.4 s"/>
+            <property name="hostname" value="https://playful-shark-cj0qnn-dev-ed.my.salesforce.com"/>
+            <property name="orgId" value="00D5w0000050VTsEAM"/>
+            <property name="username" value="musicmanmorris@playful-shark-cj0qnn.com"/>
+            <property name="testRunId" value="7075w0000AwksBX"/>
+            <property name="userId" value="0055w00000C3LSYAA3"/>
+            <property name="testRunCoverage" value="93%"/>
+            <property name="orgWideCoverage" value="19%"/>
+        </properties>
+        <testcase name="TestDeleteAccountWithOneOpportunity" classname="TestAccountDeletion" time="0.88">
+        </testcase>
+    </testsuite>
+</testsuites>

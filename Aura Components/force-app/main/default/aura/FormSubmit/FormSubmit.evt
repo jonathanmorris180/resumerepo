@@ -1,0 +1,3 @@
+<aura:event type="COMPONENT" description="The event that is called when a user searches for boats">
+    <aura:attribute name="formData" type="Object"/>
+</aura:event>

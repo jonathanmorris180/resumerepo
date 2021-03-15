@@ -1,0 +1,113 @@
+{
+    "summary": {
+        "outcome": "Failed",
+        "testsRan": 1,
+        "passing": 0,
+        "failing": 1,
+        "skipped": 0,
+        "passRate": "0%",
+        "failRate": "100%",
+        "testStartTime": "Aug 6, 2020 1:41 AM",
+        "testExecutionTime": "844 ms",
+        "testTotalTime": "844 ms",
+        "commandTime": "4931 ms",
+        "hostname": "https://playful-shark-cj0qnn-dev-ed.my.salesforce.com",
+        "orgId": "00D5w0000050VTsEAM",
+        "username": "musicmanmorris@playful-shark-cj0qnn.com",
+        "testRunId": "7075w0000BBVHtB",
+        "userId": "0055w00000C3LSYAA3",
+        "testRunCoverage": "100%",
+        "orgWideCoverage": "0%"
+    },
+    "tests": [
+        {
+            "attributes": {
+                "type": "ApexTestResult",
+                "url": "/services/data/v49.0/tooling/sobjects/ApexTestResult/07M5w000009kQWpEAM"
+            },
+            "Id": "07M5w000009kQWpEAM",
+            "QueueItemId": "7095w000000FMmsAAG",
+            "StackTrace": "Class.DailyLeadProcessor.execute: line 16, column 1",
+            "Message": "System.DmlException: Insert failed. First exception on row 0 with id 00Q5w00001rbOwQEAU; first error: INVALID_FIELD_FOR_INSERT_UPDATE, cannot specify Id in an insert call: [Id]",
+            "AsyncApexJobId": "7075w0000BBVHtBAQX",
+            "MethodName": "test",
+            "Outcome": "Fail",
+            "ApexClass": {
+                "attributes": {
+                    "type": "ApexClass",
+                    "url": "/services/data/v49.0/tooling/sobjects/ApexClass/01p5w00000Ka4LQAAZ"
+                },
+                "Id": "01p5w00000Ka4LQAAZ",
+                "Name": "DailyLeadProcessorTest",
+                "NamespacePrefix": null
+            },
+            "RunTime": 844,
+            "FullName": "DailyLeadProcessorTest.test"
+        }
+    ],
+    "coverage": {
+        "coverage": [
+            {
+                "id": "01p5w00000Ka4LLAAZ",
+                "name": "DailyLeadProcessor",
+                "totalLines": 7,
+                "lines": {
+                    "2": 1,
+                    "9": 1,
+                    "10": 1,
+                    "12": 1,
+                    "13": 1,
+                    "14": 1,
+                    "16": 1
+                },
+                "totalCovered": 7,
+                "coveredPercent": 100
+            }
+        ],
+        "records": [
+            {
+                "attributes": {
+                    "type": "ApexCodeCoverage",
+                    "url": "/services/data/v49.0/tooling/sobjects/ApexCodeCoverage/7145w00000GLSUWAA5"
+                },
+                "ApexTestClass": {
+                    "attributes": {
+                        "type": "ApexClass",
+                        "url": "/services/data/v49.0/tooling/sobjects/ApexClass/01p5w00000Ka4LQAAZ"
+                    },
+                    "Id": "01p5w00000Ka4LQAAZ",
+                    "Name": "DailyLeadProcessorTest"
+                },
+                "Coverage": {
+                    "coveredLines": [
+                        2,
+                        9,
+                        10,
+                        12,
+                        13,
+                        14,
+                        16
+                    ],
+                    "uncoveredLines": []
+                },
+                "TestMethodName": "test",
+                "NumLinesCovered": 7,
+                "ApexClassOrTrigger": {
+                    "attributes": {
+                        "type": "Name",
+                        "url": "/services/data/v49.0/tooling/sobjects/ApexClass/01p5w00000Ka4LLAAZ"
+                    },
+                    "Id": "01p5w00000Ka4LLAAZ",
+                    "Name": "DailyLeadProcessor"
+                },
+                "NumLinesUncovered": 0
+            }
+        ],
+        "summary": {
+            "totalLines": 7,
+            "coveredLines": 7,
+            "testRunCoverage": "100%",
+            "orgWideCoverage": "0%"
+        }
+    }
+}

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+    <testsuite name="force.apex" timestamp="2020-07-10T23:24:26-06:00" hostname="https://playful-shark-cj0qnn-dev-ed.my.salesforce.com" tests="4" failures="1"  errors="0"  time="0.03">
+        <properties>
+            <property name="outcome" value="Failed"/>
+            <property name="testsRan" value="4"/>
+            <property name="passing" value="3"/>
+            <property name="failing" value="1"/>
+            <property name="skipped" value="0"/>
+            <property name="passRate" value="75%"/>
+            <property name="failRate" value="25%"/>
+            <property name="testStartTime" value="Jul 10, 2020 11:24 PM"/>
+            <property name="testExecutionTime" value="0.03 s"/>
+            <property name="testTotalTime" value="0.03 s"/>
+            <property name="commandTime" value="4.39 s"/>
+            <property name="hostname" value="https://playful-shark-cj0qnn-dev-ed.my.salesforce.com"/>
+            <property name="orgId" value="00D5w0000050VTsEAM"/>
+            <property name="username" value="musicmanmorris@playful-shark-cj0qnn.com"/>
+            <property name="testRunId" value="7075w0000AuYXje"/>
+            <property name="userId" value="0055w00000C3LSYAA3"/>
+            <property name="testRunCoverage" value="100%"/>
+            <property name="orgWideCoverage" value="5%"/>
+        </properties>
+        <testcase name="testBoilingPoint" classname="TemperatureConverterTest" time="0.02">
+            <failure message="System.AssertException: Assertion Failed: Boiling point temperature is not expected.: Expected: 0, Actual: 100.00"><![CDATA[Class.TemperatureConverterTest.testBoilingPoint: line 15, column 1]]></failure>
+        </testcase>
+        <testcase name="testFreezingPoint" classname="TemperatureConverterTest" time="0.01">
+        </testcase>
+        <testcase name="testNegativeTemp" classname="TemperatureConverterTest" time="0">
+        </testcase>
+        <testcase name="testWarmTemp" classname="TemperatureConverterTest" time="0">
+        </testcase>
+    </testsuite>
+</testsuites>

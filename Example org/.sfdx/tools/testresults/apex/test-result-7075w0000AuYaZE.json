@@ -1,0 +1,276 @@
+{
+    "summary": {
+        "outcome": "Passed",
+        "testsRan": 4,
+        "passing": 4,
+        "failing": 0,
+        "skipped": 0,
+        "passRate": "100%",
+        "failRate": "0%",
+        "testStartTime": "Jul 10, 2020 11:23 PM",
+        "testExecutionTime": "28 ms",
+        "testTotalTime": "28 ms",
+        "commandTime": "3564 ms",
+        "hostname": "https://playful-shark-cj0qnn-dev-ed.my.salesforce.com",
+        "orgId": "00D5w0000050VTsEAM",
+        "username": "musicmanmorris@playful-shark-cj0qnn.com",
+        "testRunId": "7075w0000AuYaZE",
+        "userId": "0055w00000C3LSYAA3",
+        "testRunCoverage": "100%",
+        "orgWideCoverage": "5%"
+    },
+    "tests": [
+        {
+            "attributes": {
+                "type": "ApexTestResult",
+                "url": "/services/data/v48.0/tooling/sobjects/ApexTestResult/07M5w000009kDDfEAM"
+            },
+            "Id": "07M5w000009kDDfEAM",
+            "QueueItemId": "7095w000000FKgnAAG",
+            "StackTrace": null,
+            "Message": null,
+            "AsyncApexJobId": "7075w0000AuYaZEAQ0",
+            "MethodName": "testBoilingPoint",
+            "Outcome": "Pass",
+            "ApexClass": {
+                "attributes": {
+                    "type": "ApexClass",
+                    "url": "/services/data/v48.0/tooling/sobjects/ApexClass/01p5w00000KZhwBAAT"
+                },
+                "Id": "01p5w00000KZhwBAAT",
+                "Name": "TemperatureConverterTest",
+                "NamespacePrefix": null
+            },
+            "RunTime": 12,
+            "FullName": "TemperatureConverterTest.testBoilingPoint"
+        },
+        {
+            "attributes": {
+                "type": "ApexTestResult",
+                "url": "/services/data/v48.0/tooling/sobjects/ApexTestResult/07M5w000009kDDgEAM"
+            },
+            "Id": "07M5w000009kDDgEAM",
+            "QueueItemId": "7095w000000FKgnAAG",
+            "StackTrace": null,
+            "Message": null,
+            "AsyncApexJobId": "7075w0000AuYaZEAQ0",
+            "MethodName": "testFreezingPoint",
+            "Outcome": "Pass",
+            "ApexClass": {
+                "attributes": {
+                    "type": "ApexClass",
+                    "url": "/services/data/v48.0/tooling/sobjects/ApexClass/01p5w00000KZhwBAAT"
+                },
+                "Id": "01p5w00000KZhwBAAT",
+                "Name": "TemperatureConverterTest",
+                "NamespacePrefix": null
+            },
+            "RunTime": 5,
+            "FullName": "TemperatureConverterTest.testFreezingPoint"
+        },
+        {
+            "attributes": {
+                "type": "ApexTestResult",
+                "url": "/services/data/v48.0/tooling/sobjects/ApexTestResult/07M5w000009kDDhEAM"
+            },
+            "Id": "07M5w000009kDDhEAM",
+            "QueueItemId": "7095w000000FKgnAAG",
+            "StackTrace": null,
+            "Message": null,
+            "AsyncApexJobId": "7075w0000AuYaZEAQ0",
+            "MethodName": "testNegativeTemp",
+            "Outcome": "Pass",
+            "ApexClass": {
+                "attributes": {
+                    "type": "ApexClass",
+                    "url": "/services/data/v48.0/tooling/sobjects/ApexClass/01p5w00000KZhwBAAT"
+                },
+                "Id": "01p5w00000KZhwBAAT",
+                "Name": "TemperatureConverterTest",
+                "NamespacePrefix": null
+            },
+            "RunTime": 6,
+            "FullName": "TemperatureConverterTest.testNegativeTemp"
+        },
+        {
+            "attributes": {
+                "type": "ApexTestResult",
+                "url": "/services/data/v48.0/tooling/sobjects/ApexTestResult/07M5w000009kDDiEAM"
+            },
+            "Id": "07M5w000009kDDiEAM",
+            "QueueItemId": "7095w000000FKgnAAG",
+            "StackTrace": null,
+            "Message": null,
+            "AsyncApexJobId": "7075w0000AuYaZEAQ0",
+            "MethodName": "testWarmTemp",
+            "Outcome": "Pass",
+            "ApexClass": {
+                "attributes": {
+                    "type": "ApexClass",
+                    "url": "/services/data/v48.0/tooling/sobjects/ApexClass/01p5w00000KZhwBAAT"
+                },
+                "Id": "01p5w00000KZhwBAAT",
+                "Name": "TemperatureConverterTest",
+                "NamespacePrefix": null
+            },
+            "RunTime": 5,
+            "FullName": "TemperatureConverterTest.testWarmTemp"
+        }
+    ],
+    "coverage": {
+        "coverage": [
+            {
+                "id": "01p5w00000KZhwAAAT",
+                "name": "TemperatureConverter",
+                "totalLines": 3,
+                "lines": {
+                    "3": 1,
+                    "4": 1,
+                    "5": 1
+                },
+                "totalCovered": 3,
+                "coveredPercent": 100
+            }
+        ],
+        "records": [
+            {
+                "attributes": {
+                    "type": "ApexCodeCoverage",
+                    "url": "/services/data/v48.0/tooling/sobjects/ApexCodeCoverage/7145w00000GKwfEAAT"
+                },
+                "ApexTestClass": {
+                    "attributes": {
+                        "type": "ApexClass",
+                        "url": "/services/data/v48.0/tooling/sobjects/ApexClass/01p5w00000KZhwBAAT"
+                    },
+                    "Id": "01p5w00000KZhwBAAT",
+                    "Name": "TemperatureConverterTest"
+                },
+                "Coverage": {
+                    "coveredLines": [
+                        3,
+                        4,
+                        5
+                    ],
+                    "uncoveredLines": []
+                },
+                "TestMethodName": "testBoilingPoint",
+                "NumLinesCovered": 3,
+                "ApexClassOrTrigger": {
+                    "attributes": {
+                        "type": "Name",
+                        "url": "/services/data/v48.0/tooling/sobjects/ApexClass/01p5w00000KZhwAAAT"
+                    },
+                    "Id": "01p5w00000KZhwAAAT",
+                    "Name": "TemperatureConverter"
+                },
+                "NumLinesUncovered": 0
+            },
+            {
+                "attributes": {
+                    "type": "ApexCodeCoverage",
+                    "url": "/services/data/v48.0/tooling/sobjects/ApexCodeCoverage/7145w00000GKwfFAAT"
+                },
+                "ApexTestClass": {
+                    "attributes": {
+                        "type": "ApexClass",
+                        "url": "/services/data/v48.0/tooling/sobjects/ApexClass/01p5w00000KZhwBAAT"
+                    },
+                    "Id": "01p5w00000KZhwBAAT",
+                    "Name": "TemperatureConverterTest"
+                },
+                "Coverage": {
+                    "coveredLines": [
+                        3,
+                        4,
+                        5
+                    ],
+                    "uncoveredLines": []
+                },
+                "TestMethodName": "testNegativeTemp",
+                "NumLinesCovered": 3,
+                "ApexClassOrTrigger": {
+                    "attributes": {
+                        "type": "Name",
+                        "url": "/services/data/v48.0/tooling/sobjects/ApexClass/01p5w00000KZhwAAAT"
+                    },
+                    "Id": "01p5w00000KZhwAAAT",
+                    "Name": "TemperatureConverter"
+                },
+                "NumLinesUncovered": 0
+            },
+            {
+                "attributes": {
+                    "type": "ApexCodeCoverage",
+                    "url": "/services/data/v48.0/tooling/sobjects/ApexCodeCoverage/7145w00000GKwfGAAT"
+                },
+                "ApexTestClass": {
+                    "attributes": {
+                        "type": "ApexClass",
+                        "url": "/services/data/v48.0/tooling/sobjects/ApexClass/01p5w00000KZhwBAAT"
+                    },
+                    "Id": "01p5w00000KZhwBAAT",
+                    "Name": "TemperatureConverterTest"
+                },
+                "Coverage": {
+                    "coveredLines": [
+                        3,
+                        4,
+                        5
+                    ],
+                    "uncoveredLines": []
+                },
+                "TestMethodName": "testWarmTemp",
+                "NumLinesCovered": 3,
+                "ApexClassOrTrigger": {
+                    "attributes": {
+                        "type": "Name",
+                        "url": "/services/data/v48.0/tooling/sobjects/ApexClass/01p5w00000KZhwAAAT"
+                    },
+                    "Id": "01p5w00000KZhwAAAT",
+                    "Name": "TemperatureConverter"
+                },
+                "NumLinesUncovered": 0
+            },
+            {
+                "attributes": {
+                    "type": "ApexCodeCoverage",
+                    "url": "/services/data/v48.0/tooling/sobjects/ApexCodeCoverage/7145w00000GKwfHAAT"
+                },
+                "ApexTestClass": {
+                    "attributes": {
+                        "type": "ApexClass",
+                        "url": "/services/data/v48.0/tooling/sobjects/ApexClass/01p5w00000KZhwBAAT"
+                    },
+                    "Id": "01p5w00000KZhwBAAT",
+                    "Name": "TemperatureConverterTest"
+                },
+                "Coverage": {
+                    "coveredLines": [
+                        3,
+                        4,
+                        5
+                    ],
+                    "uncoveredLines": []
+                },
+                "TestMethodName": "testFreezingPoint",
+                "NumLinesCovered": 3,
+                "ApexClassOrTrigger": {
+                    "attributes": {
+                        "type": "Name",
+                        "url": "/services/data/v48.0/tooling/sobjects/ApexClass/01p5w00000KZhwAAAT"
+                    },
+                    "Id": "01p5w00000KZhwAAAT",
+                    "Name": "TemperatureConverter"
+                },
+                "NumLinesUncovered": 0
+            }
+        ],
+        "summary": {
+            "totalLines": 3,
+            "coveredLines": 3,
+            "testRunCoverage": "100%",
+            "orgWideCoverage": "5%"
+        }
+    }
+}

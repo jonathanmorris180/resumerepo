@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+    <testsuite name="force.apex" timestamp="2020-08-06T01:41:12-06:00" hostname="https://playful-shark-cj0qnn-dev-ed.my.salesforce.com" tests="1" failures="1"  errors="0"  time="0.84">
+        <properties>
+            <property name="outcome" value="Failed"/>
+            <property name="testsRan" value="1"/>
+            <property name="passing" value="0"/>
+            <property name="failing" value="1"/>
+            <property name="skipped" value="0"/>
+            <property name="passRate" value="0%"/>
+            <property name="failRate" value="100%"/>
+            <property name="testStartTime" value="Aug 6, 2020 1:41 AM"/>
+            <property name="testExecutionTime" value="0.84 s"/>
+            <property name="testTotalTime" value="0.84 s"/>
+            <property name="commandTime" value="4.93 s"/>
+            <property name="hostname" value="https://playful-shark-cj0qnn-dev-ed.my.salesforce.com"/>
+            <property name="orgId" value="00D5w0000050VTsEAM"/>
+            <property name="username" value="musicmanmorris@playful-shark-cj0qnn.com"/>
+            <property name="testRunId" value="7075w0000BBVHtB"/>
+            <property name="userId" value="0055w00000C3LSYAA3"/>
+            <property name="testRunCoverage" value="100%"/>
+            <property name="orgWideCoverage" value="0%"/>
+        </properties>
+        <testcase name="test" classname="DailyLeadProcessorTest" time="0.84">
+            <failure message="System.DmlException: Insert failed. First exception on row 0 with id 00Q5w00001rbOwQEAU; first error: INVALID_FIELD_FOR_INSERT_UPDATE, cannot specify Id in an insert call: [Id]"><![CDATA[Class.DailyLeadProcessor.execute: line 16, column 1]]></failure>
+        </testcase>
+    </testsuite>
+</testsuites>
